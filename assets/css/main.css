@@ -215,7 +215,7 @@ input,
 select,
 textarea {
 	color: #a2a2a2;
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-family: "Spline Sans", sans-serif;
 	font-size: 16pt;
 	font-weight: 400;
 	line-height: 1.75em;
@@ -239,7 +239,7 @@ a:hover {
 
 strong,
 b {
-	color: #787878;
+	color: #595959;
 	font-weight: 400;
 }
 
@@ -258,8 +258,10 @@ h3,
 h4,
 h5,
 h6 {
-	color: #787878;
-	font-weight: 400;
+	color: #595959;
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
 	line-height: 1em;
 	margin: 0 0 1em 0;
 }
@@ -1894,7 +1896,7 @@ article.special {
 }
 
 header p {
-	color: #b2b2b2;
+	color: #595959;
 	position: relative;
 	margin: 0 0 1.5em 0;
 }
@@ -1930,7 +1932,7 @@ form {
 }
 
 label {
-	color: #787878;
+	color: #595959;
 	display: block;
 	font-size: 0.9em;
 	font-weight: 400;
@@ -1984,7 +1986,7 @@ select {
 }
 
 select option {
-	color: #787878;
+	color: #595959;
 	background: #fff;
 }
 
@@ -2067,8 +2069,8 @@ input[type="radio"]+label:before {
 
 input[type="checkbox"]:checked+label:before,
 input[type="radio"]:checked+label:before {
-	background: #787878;
-	border-color: #787878;
+	background: #595959;
+	border-color: #595959;
 	color: #fff;
 	content: '\f00c';
 }
@@ -2087,22 +2089,22 @@ input[type="radio"]+label:before {
 }
 
 ::-webkit-input-placeholder {
-	color: #b2b2b2 !important;
+	color: #595959 !important;
 	opacity: 1.0;
 }
 
 :-moz-placeholder {
-	color: #b2b2b2 !important;
+	color: #595959 !important;
 	opacity: 1.0;
 }
 
 ::-moz-placeholder {
-	color: #b2b2b2 !important;
+	color: #595959 !important;
 	opacity: 1.0;
 }
 
 :-ms-input-placeholder {
-	color: #b2b2b2 !important;
+	color: #595959 !important;
 	opacity: 1.0;
 }
 
@@ -2362,7 +2364,7 @@ ul.labeled-icons li a {
 }
 
 ul.labeled-icons li h3 {
-	color: #b2b2b2;
+	color: #595959;
 	left: 0;
 	position: absolute;
 	text-align: center;
@@ -2519,7 +2521,7 @@ table td {
 }
 
 table th {
-	color: #787878;
+	color: #595959;
 	font-size: 0.9em;
 	font-weight: 400;
 	padding: 0 0.75em 0.75em 0.75em;
@@ -2562,6 +2564,39 @@ table.alt tfoot {
 
 /* Button */
 
+.resumeButton {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 0.35em;
+	/* border: solid 3px #efefef; */
+	color: white !important;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	/* height: 3.15em;
+	height: calc(2.75em + 6px); */
+	line-height: 2.75em;
+	/* min-width: 10em; */
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none !important;
+	white-space: nowrap;
+	width: fit-content;
+	margin-top: 5px;
+}
+
+.inner a {
+	border-bottom: none !important;
+	text-decoration: none !important;
+}
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -2577,7 +2612,7 @@ input[type="button"],
 	background-color: transparent;
 	border-radius: 0.35em;
 	border: solid 3px #efefef;
-	color: #787878 !important;
+	color: #595959 !important;
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 400;
@@ -2679,7 +2714,7 @@ input[type="button"]:disabled,
 .button:disabled {
 	background-color: #e7e7e7 !important;
 	border-color: #e7e7e7 !important;
-	color: #b2b2b2 !important;
+	color: #595959 !important;
 	cursor: default;
 }
 

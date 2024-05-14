@@ -10,12 +10,14 @@
 	<title>Carmen Shiu - Full-Stack Software Engineer</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.png" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Spline+Sans:wght@300..700&display=swap"
 		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/3bdae81422.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="is-preload">
@@ -23,7 +25,7 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+			<div class="image avatar"><img src="images/avatar.jpg" alt="" /></div>
 			<h1>Oh, hi! &#128075; <br />
 				<strong>I'm Carmen Shiu</strong>,<br />
 				a full-stack software engineer.<br />
@@ -46,15 +48,18 @@
 
 			<p>Now, as a full-stack software engineer, I'm building dynamic web applications, applying the professional
 				skills I've developed over the years, and—more
-				importantly—finally pursuing that childhood passion of mine.</p>
-
-			<p></p>
-			<i>*Yes, I’m dating myself here.</i>
-			</p>
+				importantly—finally pursuing that childhood passion of mine.</p </p>
 			<ul class="actions">
-				<li><a href="https://www.linkedin.com/in/carmenshiu/" target="_blank" class="button">Connect on
-						LinkedIn</a></li>
+				<li>
+					<h4>
+						<a href="https://www.linkedin.com/in/carmenshiu/" target="_blank" class="linkedinButton">CONNECT
+							ON
+							LINKEDIN</a>
+					</h4>
+				</li>
 			</ul>
+			<br />
+			<p><i>*Yes, I’m dating myself here.</i></p>
 		</section>
 
 		<!-- Two -->
@@ -63,20 +68,39 @@
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
 					<a href="images/plantera.png" class="image fit thumb"><img src="images/plantera.png"
-							alt="The Paw" /></a>
-					<h3><a href="https://plantera.onrender.com" target="_blank">Plantera</h3>
-					<p> <a href="https://plantera.onrender.com" target="_blank">Live</a> | <a
-							href="https://github.com/craftycarmen/plantera" target="_blank">GitHub Repo</a></p>
-					<p><i>Plant marketplace community platform.</i></p>
+							alt="Plantera" /></a>
+					<div class="project">
+						<h3>Plantera</h3>
+						<p><a href="https://plantera.onrender.com" target="_blank">Live</a>&nbsp; | &nbsp;<a
+								href="https://github.com/craftycarmen/plantera" target="_blank">GitHub Repo</a></p>
+					</div>
+					<div class="projectDetails">
+
+						<p><i>Plant marketplace community platform</i></p>
+						<p>Solo project using JavaScript, ExpressJS, React, Redux, Amazon Web Services (AWS)</p>
+					</div>
 
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/thepaw.png" class="image fit thumb"><img src="images/thepaw.png"
+					<!-- <a href="images/thepaw.png" class="image fit thumb"><img src="images/thepaw.png"
 							alt="The Paw" /></a>
 					<h3><a href="https://the-paw.onrender.com" target="_blank">The Paw</a></h3>
 					<p><a href="https://the-paw.onrender.com" target="_blank">Live</a> | <a
 							href="https://github.com/ballisticbutterflies/The-Paw" target="_blank">GitHub Repo</a></p>
-					<p><i>Pet-friendly business review platform.</i></p>
+					<p><i>Pet-friendly business review platform</i></p> -->
+					<a href="images/thepaw.png" class="image fit thumb"><img src="images/thepaw.png"
+							alt="The Paw" /></a>
+					<div class="project">
+						<h3>The Paw</h3>
+						<p><a href="https://the-paw.onrender.com" target="_blank">Live</a>&nbsp; | &nbsp;<a
+								href="https://github.com/ballisticbutterflies/The-Paw" target="_blank">GitHub Repo</a>
+						</p>
+					</div>
+					<div class="projectDetails">
+						<p><i>Pet-friendly business review platform</i></p>
+						<p>Three-member group project using Python, Flask, JavaScript, React, Redux, Google Maps API,
+							AWS</p>
+					</div>
 				</article>
 			</div>
 		</section>
@@ -131,6 +155,25 @@
 			</div>
 		</section>
 
+		<section id="five">
+			<h2>When I'm Not Coding...</h2>
+			<ul class="labeled-icons">
+				<li>
+					<h3 class="icon solid fa-seedling"><span class="label">Plant</span></h3>
+					<span>I'm caring for 50+ plants.</span>
+				</li>
+				<li>
+					<h3 class="icon solid fa-dog"><span class="label">Dog</span></h3>
+					<span>I'm spending time with my dogs.</span>
+				</li>
+				<li>
+					<h3 class="icon solid fa-utensils"><span class="label">Cooking</span></h3>
+					<span>I'm experimenting with recipes from my extensive cookbook collection.</span>
+				</li>
+			</ul>
+			<span><i>...all while unapologetically jamming to Taylor Swift.</i></span>
+		</section>
+
 		<!-- Four -->
 		<section id="four">
 			<h2>Get In Touch</h2>
@@ -170,6 +213,8 @@
 				</div>
 			</div>
 		</section>
+
+
 
 		<!-- Four -->
 		<!--
@@ -502,7 +547,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<li><a href="mailto:hi@carmenshiu.com" class="icon solid fa-envelope"><span
 							class="label">Email</span></a></li>
 			</ul>
-			<a href="#" class="resumeButton">Resume</a></li>
+			<h4><a href="assets/Carmen_Shiu_Resume.pdf" target="_blank" class="resumeButton">RESUME &nbsp; <i
+						class="icon solid fa-arrow-up-right-from-square"></i></a></h4>
+			</li>
 			<ul class="copyright">
 				<li>&copy; Carmen Shiu</li>
 				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>

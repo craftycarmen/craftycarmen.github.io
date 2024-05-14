@@ -124,6 +124,10 @@ q {
 	quotes: none;
 }
 
+a {
+	color: #f0aa00 !important;
+}
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -227,13 +231,13 @@ a {
 	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	border-bottom: dotted 1px;
-	color: #49bf9d;
+	color: #f0aa00;
 	text-decoration: none;
 }
 
 a:hover {
 	border-bottom-color: transparent;
-	color: #49bf9d !important;
+	color: #595959 !important;
 	text-decoration: none;
 }
 
@@ -1972,7 +1976,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-	border-color: #49bf9d;
+	border-color: #f0aa00;
 }
 
 select {
@@ -2077,7 +2081,7 @@ input[type="radio"]:checked+label:before {
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
-	border-color: #49bf9d;
+	border-color: #f0aa00;
 }
 
 input[type="checkbox"]+label:before {
@@ -2372,6 +2376,21 @@ ul.labeled-icons li h3 {
 	width: 1em;
 }
 
+.project {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.project h3 {
+	margin: 0px !important;
+}
+
+.projectDetails {
+	display: grid;
+	gap: 10px;
+}
+
 /* Actions */
 
 ul.actions {
@@ -2573,7 +2592,36 @@ table.alt tfoot {
 	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	background-color: rgba(255, 255, 255, 0.4);
+	/* background-color: rgba(255, 255, 255, 0.4); */
+	border-radius: 0.35em;
+	/* border: solid 3px #efefef; */
+	color: white !important;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	/* height: 3.15em;
+	height: calc(2.75em + 6px); */
+	/* min-width: 10em; */
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none !important;
+	white-space: nowrap;
+	width: fit-content;
+	margin-top: 5px;
+	background-color: #f0aa00;
+	border-bottom: none !important;
+	text-decoration: none !important;
+}
+
+.linkedinButton {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	border-radius: 0.35em;
 	/* border: solid 3px #efefef; */
 	color: white !important;
@@ -2590,11 +2638,18 @@ table.alt tfoot {
 	white-space: nowrap;
 	width: fit-content;
 	margin-top: 5px;
+	background-color: #f0aa00;
+	border-bottom: none !important;
+	text-decoration: none !important;
 }
 
 .inner a {
 	border-bottom: none !important;
 	text-decoration: none !important;
+}
+
+.inner span {
+	color: #f0aa00;
 }
 
 input[type="submit"],
@@ -2624,14 +2679,15 @@ input[type="button"],
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
+
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 .button:hover {
-	border-color: #49bf9d;
-	color: #49bf9d !important;
+	border-color: #f0aa00;
+	color: #f0aa00 !important;
 }
 
 input[type="submit"]:active,
@@ -2639,8 +2695,8 @@ input[type="reset"]:active,
 input[type="button"]:active,
 .button:active {
 	background-color: rgba(73, 191, 157, 0.1);
-	border-color: #49bf9d;
-	color: #49bf9d !important;
+	border-color: #f0aa00;
+	color: #f0aa00 !important;
 }
 
 input[type="submit"].icon,
@@ -2683,8 +2739,8 @@ input[type="submit"].primary,
 input[type="reset"].primary,
 input[type="button"].primary,
 .button.primary {
-	background-color: #49bf9d;
-	border-color: #49bf9d;
+	background-color: #f0aa00;
+	border-color: #f0aa00;
 	color: #ffffff !important;
 }
 
@@ -2862,8 +2918,8 @@ input[type="button"]:disabled,
 
 #main>section {
 	border-top: solid 2px #efefef;
-	margin: 4em 0 0 0;
-	padding: 4em 0 0 0;
+	margin: 2em 0 0 0;
+	padding: 2em 0 0 0;
 }
 
 #main>section:first-child {

@@ -1,33 +1,37 @@
-Strata by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+== Theme Name: Pink Donut - FREE PSD Template
+
+== Copyright (c) 2016 BootstrapThemes.co
+
+== http://BootstrapThemes.co
 
 
-A simple, minimalist template that actually began life as an unused redesign of my
-personal site. Includes a (configurable) parallax background effect, Poptrox-powered
-lightbox gallery, a bunch of pre-styled elements, and Sass sources for the Sass-inclined.
-
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = Not included)
-
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
-
-AJ
-aj@lkn.io | @ajlkn
-
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+Html Created by: http://bootstrapthemes.co
 
 
-Credits:
 
-	Demo Images:
-		Unsplash (unsplash.com)
+Psd Created by:https://www.behance.net/gallery/31532855/Pink-Donut-FREE-PSD-Template 
 
-	Icons:
-		Font Awesome (fontawesome.io)
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+
+Rights: 
+You are permitted to use the resources for any number of personal and commercial projects.
+You may modify the resources according to your requirements and include them into works, 
+such as websites, applications or other materials intended for sale. No attribution or 
+link back to this site is required, however any credit will be much appreciated.
+
+
+Prohibitions:
+You do not have the rights to redistribute, resell, lease, license, sublicense or offer 
+files downloaded from http://bootstrapthemes.co to any third party ìas isî or as a separate attachment 
+from any of your work. If you wish to promote my resources on your site, you must link back 
+to the resource page where users can find the download and not directly to the download file.
+
+
+
+If you would like to share one of my resources, you can do so by making a link to the specific 
+resource on http://bootstrapthemes.co , you can if you wish insert the embed code for the product previews images to illustrate your link. 
+No HOTLINKING is allowed i.e. you cannot make a direct link to the download or/and the images hosted on http://bootstrapthemes.co
+
+Concerning blog posts, you are free to link to it from any website, 
+but you cannot however publish it as it is, without prior consent from http://bootstrapthemes.co

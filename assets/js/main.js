@@ -1,134 +1,104 @@
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+"use strict";
 
-(function ($) {
+jQuery(document).ready(function ($) {
 
-	var $window = $(window),
-		$body = $('body'),
-		$header = $('#header'),
-		$footer = $('#footer'),
-		$main = $('#main'),
-		settings = {
+    $(window).on('load', function () {
+        $(".loaded").fadeOut();
+        $(".preloader").delay(1000).fadeOut("slow");
+    });
 
-			// Parallax background effect?
-			parallax: true,
+    /*---------------------------------------------*
+     * Mobile menu
+     ---------------------------------------------*/
+    $('#bs-example-navbar-collapse-1').find('a[href*="#"]:not([href="#"])').on('click', function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: (target.offset().top - 40)
+                }, 1000);
+                if ($('.navbar-toggle').is(':visible')) {
+                    $(this).closest('.navbar-collapse').collapse('toggle');
+                }
+                return false;
+            }
+        }
+    });
 
-			// Parallax factor (lower = more intense, higher = less intense).
-			parallaxFactor: 20
+    /*---------------------------------------------*
+     * STICKY scroll
+     ---------------------------------------------*/
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.navbar-fixed-top').addClass('menu-scroll');
+        } else {
+            $('.navbar-fixed-top').removeClass('menu-scroll');
+        }
+    });
 
-		};
+    /*---------------------------------------------*
+     * Counter 
+     ---------------------------------------------*/
+    $('.statistic-counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
 
-	// Breakpoints.
-	breakpoints({
-		xlarge: ['1281px', '1800px'],
-		large: ['981px', '1280px'],
-		medium: ['737px', '980px'],
-		small: ['481px', '736px'],
-		xsmall: [null, '480px'],
-	});
+    /*---------------------------------------------*
+     * WOW
+     ---------------------------------------------*/
+    var wow = new WOW({
+        mobile: false // trigger animations on mobile devices (default is true)
+    });
+    wow.init();
 
-	// Play initial animations on page load.
-	$window.on('load', function () {
-		window.setTimeout(function () {
-			$body.removeClass('is-preload');
-		}, 100);
-	});
+    /* ---------------------------------------------------------------------
+     Carousel
+     ---------------------------------------------------------------------= */
+    $('.slider').owlCarousel({
+        responsiveClass: true,
+        autoplay: false,
+        items: 1,
+        loop: true,
+        dots: true,
+        nav: false,
+        navText: [
+            "<i class='lnr lnr-chevron-left'></i>",
+            "<i class='lnr lnr-chevron-right'></i>"
+        ],
+        autoplayHoverPause: true
+    });
 
-	// Touch?
-	if (browser.mobile) {
+    /*---------------------------------------------*
+     * EasyPieChart
+     ---------------------------------------------*/
+    $('.chart').easyPieChart({
+        animate: 2000,
+        scaleColor: false,
+        lineWidth: 10,
+        lineCap: 'square',
+        size: 130,
+        trackColor: false,
+        barColor: '#498af3',
+        onStep: function (from, to, percent) {
+            $(this.el).find('.percent').text(Math.round(percent));
+        }
+    });
 
-		// Turn on touch mode.
-		$body.addClass('is-touch');
+    /*---------------------------------------------*
+     * Scroll Up
+     ---------------------------------------------*/
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 600) {
+            $('.scrollup').fadeIn('slow');
+        } else {
+            $('.scrollup').fadeOut('slow');
+        }
+    });
 
-		// Height fix (mostly for iOS).
-		window.setTimeout(function () {
-			$window.scrollTop($window.scrollTop() + 1);
-		}, 0);
-
-	}
-
-	// Footer.
-	breakpoints.on('<=medium', function () {
-		$footer.insertAfter($main);
-	});
-
-	breakpoints.on('>medium', function () {
-		$footer.appendTo($header);
-	});
-
-	// Header.
-
-	// Parallax background.
-
-	// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-	if (browser.name == 'ie'
-		|| browser.mobile)
-		settings.parallax = false;
-
-	if (settings.parallax) {
-
-		breakpoints.on('<=medium', function () {
-
-			$window.off('scroll.strata_parallax');
-			$header.css('background-position', '');
-
-		});
-
-		breakpoints.on('>medium', function () {
-
-			$header.css('background-position', 'left 0px');
-
-			$window.on('scroll.strata_parallax', function () {
-				$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-			});
-
-		});
-
-		$window.on('load', function () {
-			$window.triggerHandler('scroll');
-		});
-
-	}
-
-	// Main Sections: Two.
-
-	// Lightbox gallery.
-	$window.on('load', function () {
-
-		// $('#two').poptrox({
-		// 	caption: function ($a) { return $a.next('h3').text(); },
-		// 	overlayColor: '#2c2c2c',
-		// 	overlayOpacity: 0.85,
-		// 	popupCloserText: '',
-		// 	popupLoaderText: '',
-		// 	selector: '.work-item a.image',
-		// 	usePopupCaption: true,
-		// 	usePopupDefaultStyling: false,
-		// 	usePopupEasyClose: false,
-		// 	usePopupNav: true,
-		// 	windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-		// });
-
-		$('#two').poptrox({
-			caption: function ($a) {
-				return $a.closest('.work-item').find('h3').text();
-			},
-			overlayColor: '#2c2c2c',
-			overlayOpacity: 0.85,
-			popupCloserText: '',
-			popupLoaderText: '',
-			selector: '.work-item a.image',
-			usePopupCaption: true,
-			usePopupDefaultStyling: false,
-			usePopupEasyClose: false,
-			usePopupNav: true,
-			windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-		});
-
-
-	});
-
-})(jQuery);
+    $('.scrollup').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+        return false;
+    });
+});

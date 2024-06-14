@@ -407,6 +407,45 @@ pre code {
 	width: 100%;
 }
 
+.typewriter {
+	overflow: hidden;
+	border-right: 2px solid #f0aa00;
+	white-space: nowrap;
+	animation:
+		typing 3.5s steps(44),
+		blink-caret .5s normal infinite;
+	text-align: left;
+	width: fit-content;
+	margin-right: 0;
+	display: inline-block;
+	/* Ensures it behaves correctly with width and margin */
+
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0
+	}
+
+	to {
+		width: 100%
+	}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+	from,
+	to {
+		border-color: transparent
+	}
+
+	50% {
+		border-color: #f0aa00
+	}
+}
+
 @media screen and (max-width: 980px) {
 
 	.container {
@@ -1158,6 +1197,19 @@ pre code {
 }
 
 @media screen and (max-width: 980px) {
+
+
+	#header .inner {
+		grid-template-columns: auto;
+	}
+
+	.inner h1 {
+		text-align: right;
+	}
+
+	.typewriter {
+		display: grid;
+	}
 
 	.row {
 		display: flex;
@@ -2643,6 +2695,12 @@ table.alt tfoot {
 	text-decoration: none !important;
 }
 
+.inner {
+	display: grid;
+	justify-content: end;
+	justify-items: end;
+}
+
 .inner a {
 	border-bottom: none !important;
 	text-decoration: none !important;
@@ -2863,7 +2921,7 @@ input[type="button"]:disabled,
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 1.35em;
 	line-height: 1.75em;
-	margin: 0;
+	width: fit-content;
 }
 
 #header .image.avatar {
@@ -3219,6 +3277,8 @@ body.is-touch .poptrox-popup .closer {
 		font-size: 12pt;
 	}
 
+
+
 }
 
 /* Large */
@@ -3229,7 +3289,7 @@ body.is-touch .poptrox-popup .closer {
 
 	#header {
 		padding: 6em 3em 3em 3em;
-		width: 30%;
+		width: 35%;
 	}
 
 	#header h1 {
@@ -3237,12 +3297,23 @@ body.is-touch .poptrox-popup .closer {
 	}
 
 	#header h1 br {
-		display: none;
+		/* display: none; */
 	}
 
 	#header>.inner {
 		margin-bottom: 0;
+		grid-template-rows: 1fr 4fr 1fr;
 	}
+
+	.inner h1 {
+		text-align: right;
+		width: fit-content;
+	}
+
+	.typewriter {
+		display: grid;
+	}
+
 
 	/* Footer */
 
@@ -3257,10 +3328,10 @@ body.is-touch .poptrox-popup .closer {
 	/* Main */
 
 	#main {
-		margin-left: 30%;
+		margin-left: 35%;
 		max-width: none;
 		padding: 6em 3em 3em 3em;
-		width: calc(100% - 30%);
+		width: calc(100% - 35%);
 	}
 
 }
@@ -3293,7 +3364,7 @@ body.is-touch .poptrox-popup .closer {
 		background-position: top left, center center;
 		background-size: auto, cover;
 		left: auto;
-		padding: 6em 4em;
+		padding: 3em 4em;
 		position: relative;
 		text-align: center;
 		top: auto;
@@ -3307,6 +3378,18 @@ body.is-touch .poptrox-popup .closer {
 
 	#header h1 br {
 		display: inline;
+	}
+
+	#header .inner {
+		grid-template-columns: auto;
+	}
+
+	.inner h1 {
+		text-align: right;
+	}
+
+	.typewriter {
+		display: grid;
 	}
 
 	/* Footer */
@@ -3438,7 +3521,7 @@ body.is-touch .poptrox-popup .closer {
 	/* Header */
 
 	#header {
-		padding: 4.5em 1.5em;
+		padding: 5em 1.5em 0.5em 1.5em;
 	}
 
 	#header h1 br {
@@ -3454,5 +3537,19 @@ body.is-touch .poptrox-popup .closer {
 		margin-left: 0;
 		padding-left: 0;
 	}
+
+	#header .inner {
+		grid-template-columns: auto;
+	}
+
+	.inner h1 {
+		text-align: right;
+	}
+
+	.typewriter {
+		display: grid;
+	}
+
+
 
 }

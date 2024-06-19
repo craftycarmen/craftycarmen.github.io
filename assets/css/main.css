@@ -198,7 +198,7 @@ html {
 }
 
 body {
-	background: #E0E0E0;
+	background: #FAF9F6;
 }
 
 body.is-preload *,
@@ -2044,7 +2044,7 @@ select {
 
 select option {
 	color: #1A3A3A;
-	background: #E0E0E0;
+	background: #FAF9F6;
 }
 
 select:focus::-ms-value {
@@ -2128,7 +2128,7 @@ input[type="checkbox"]:checked+label:before,
 input[type="radio"]:checked+label:before {
 	background: #1A3A3A;
 	border-color: #1A3A3A;
-	color: #E0E0E0;
+	color: #FAF9F6;
 	content: '\f00c';
 }
 
@@ -2260,7 +2260,7 @@ input[type="radio"]+label:before {
 	transition: opacity 0.2s ease-in-out;
 	border-radius: 0.35em;
 	border: solid 3px rgba(255, 255, 255, 0.5);
-	color: #E0E0E0;
+	color: #FAF9F6;
 	content: 'View';
 	display: inline-block;
 	font-size: 0.8em;
@@ -2800,7 +2800,7 @@ input[type="button"].primary,
 .button.primary {
 	background-color: #f0aa00;
 	border-color: #f0aa00;
-	color: #E0E0E0 !important;
+	color: #FAF9F6 !important;
 }
 
 input[type="submit"].primary:hover,
@@ -2907,7 +2907,7 @@ input[type="button"]:disabled,
 
 #header strong,
 #header b {
-	color: #E0E0E0;
+	color: #FAF9F6;
 }
 
 #header h2,
@@ -2915,7 +2915,7 @@ input[type="button"]:disabled,
 #header h4,
 #header h5,
 #header h6 {
-	color: #E0E0E0;
+	color: #FAF9F6;
 }
 
 #header h1 {
@@ -3059,7 +3059,7 @@ input[type="button"]:disabled,
 	-ms-box-sizing: content-box;
 	box-sizing: content-box;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	background: #E0E0E0;
+	background: #FAF9F6;
 	border-radius: 0.35em;
 	box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
 	overflow: hidden;
@@ -3100,7 +3100,7 @@ input[type="button"]:disabled,
 }
 
 .poptrox-popup .caption {
-	background: #E0E0E0;
+	background: #FAF9F6;
 	bottom: 0;
 	cursor: default;
 	font-size: 0.9em;
@@ -3146,7 +3146,7 @@ input[type="button"]:disabled,
 
 .poptrox-popup .nav-next:before,
 .poptrox-popup .nav-previous:before {
-	color: #E0E0E0;
+	color: #FAF9F6;
 	font-size: 2.5em;
 	height: 1em;
 	line-height: 1em;
@@ -3182,7 +3182,7 @@ input[type="button"]:disabled,
 	-ms-transition: opacity 0.2s ease-in-out;
 	transition: opacity 0.2s ease-in-out;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	color: #E0E0E0;
+	color: #FAF9F6;
 	height: 4em;
 	line-height: 4em;
 	opacity: 0;

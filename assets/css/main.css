@@ -3548,8 +3548,17 @@ body.is-touch .poptrox-popup .closer {
 		text-align: right;
 	}
 
+	.inner {
+		position: relative; /* Allows absolute positioning of the child */
+	}
+
 	.typewriter {
-		display: grid;
+		text-align: right;
+		display: block; /* Forces it onto a new line */
+		position: absolute; /* Makes the typewriter text stay right-aligned */
+		right: 0; /* Aligns the text to the right */
+		width: auto; /* Ensures proper resizing */
+		white-space: nowrap; /* Prevents text wrapping */
 	}
 
 

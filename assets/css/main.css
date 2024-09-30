@@ -2874,12 +2874,12 @@ input[type="button"]:disabled,
 	-ms-justify-content: space-between;
 	justify-content: space-between;
 	background-color: #fff;
-	background-attachment: scroll, scroll;
+	background-attachment: fixed;
 	background-image: url("images/overlay.png"), url("../../images/bg_plant.jpg");
 	background-position: top left, top left;
 	background-repeat: repeat, no-repeat;
-	background-size: auto, 150%;
-	color: rgba(255, 255, 255, 0.);
+	background-size: auto, cover;
+	color: rgba(255, 255, 255, 0.5);
 	height: 100%;
 	left: 0;
 	padding: 8em 4em;
@@ -2897,13 +2897,13 @@ input[type="button"]:disabled,
 	width: 100%;
 }
 
-#header>.inner {
+/* #header>.inner {
 	-moz-flex-grow: 1;
 	-webkit-flex-grow: 1;
 	-ms-flex-grow: 1;
 	flex-grow: 1;
 	margin: 0 0 2em 0;
-}
+} */
 
 #header strong,
 #header b {
@@ -3294,17 +3294,17 @@ body.is-touch .poptrox-popup .closer {
 	}
 
 	#header h1 {
-		font-size: 1.25em;
+		font-size: 1.75em;
 	}
 
 	#header h1 br {
 		/* display: none; */
 	}
 
-	#header>.inner {
+	/* #header>.inner {
 		margin-bottom: 0;
 		grid-template-rows: 1fr 4fr 1fr;
-	}
+	} */
 
 	.inner h1 {
 		text-align: right;
@@ -3371,6 +3371,7 @@ body.is-touch .poptrox-popup .closer {
 		top: auto;
 		width: 100%;
 		display: block;
+		height: auto;
 	}
 
 	#header h1 {

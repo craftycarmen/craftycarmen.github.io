@@ -9,22 +9,22 @@
     "pronunciation": "/ri-shi-kaysh/",
     "audioFile": "/assets/name-pro.mp3",
     "cssVarPrefix": "hp",
-    "email": "hrishikeshpaul12@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/hrishikeshpaul/",
-    "github": "https://github.com/hrishikeshpaul",
-    "resume": "https://docs.google.com/viewer?url=https://docs.google.com/document/d/1s3G7PiPHlK3Ett_W-WUU01GQnsggiLrWZB3IiMAgBEk/export?format=pdf",
+    "email": "hi@carmenshiu.com",
+    "linkedin": "https://www.linkedin.com/in/carmenshiu",
+    "github": "https://github.com/craftycarmen",
+    "resume": "/assets/Carmen_Shiu_Resume.pdf",
     "socials": [
         {
             "type": "linkedin",
-            "link": "https://www.linkedin.com/in/hrishikeshpaul/"
+            "link": "https://www.linkedin.com/in/carmenshiu"
         },
         {
             "type": "github",
-            "link": "https://github.com/hrishikeshpaul"
+            "link": "https://github.com/craftycarmen"
         },
         {
             "type": "mail",
-            "link": "mailto:hrishikeshpaul12@gmail.com"
+            "link": "mailto:hi@carmenshiu.com"
         }
     ]
 }

@@ -1,10 +1,5 @@
-Welcome 👋 I'm a _Frontend Software Engineer_ at [Reputation](https://reputation.com/) based out of Chicago, Illinois. I recently graduated from Indiana University with a Masters degree in Computer Science and I'm passionate about **Software Development**, **UX Design** and **Artificial Intelligence**.
+I'm a **Software Engineer**. My passion for coding started when I created fan sites for music artists in my youth, using drag-and-drop platforms like Angelfire and Geocities, and later teaching myself HTML and CSS.
 
-I'm currently working with,
+After going to school for PR and becoming a **project manager-turned-product manager** for 11 years, I realized it was time for a career change and enrolled in an **immersive software development course** with a focus on **full-stack web development**.
 
--   React (TS)
--   NodeJS
--   Flask (Python)
--   HTML/SCSS
--   WebSockets
--   GraphQL
+Now, I'm building full-stack, dynamic web applications, applying the professional skills I've developed over the years, and—more importantly—finally **pursuing that childhood passion** of mine.

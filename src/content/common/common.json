@@ -1,14 +1,14 @@
 {
-    "name": "Hrishikesh Paul",
+    "name": "Carmen Shiu",
     "logoType": {
-        "mobile": "HP",
-        "desktop": "Hrishikesh Paul"
+        "mobile": "CS",
+        "desktop": "Carmen Shiu"
     },
-    "mainPicture": "/assets/HP.webp",
-    "mainPictureJPG": "/assets/HP.jpeg",
-    "pronunciation": "/ri-shi-kaysh/",
+    "mainPicture": "/assets/face.webp",
+    "mainPictureJPG": "/assets/face.jpg",
+    "pronunciation": "/car-men/",
     "audioFile": "/assets/name-pro.mp3",
-    "cssVarPrefix": "hp",
+    "cssVarPrefix": "cs",
     "email": "hi@carmenshiu.com",
     "linkedin": "https://www.linkedin.com/in/carmenshiu",
     "github": "https://github.com/craftycarmen",

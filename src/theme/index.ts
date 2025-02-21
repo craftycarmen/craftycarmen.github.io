@@ -1,6 +1,6 @@
 import { ThemeConfig, extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
 
-import { PrimaryColors, PrimaryDarkColors } from "theme/colors/Colors";
+import { GunmetalColors, CoralColors, TealColors, LavenderColors, WhiteColors, YellowColors } from "theme/colors/Colors";
 import { components } from "theme/component-styles/ComponentStyles";
 
 const config: ThemeConfig = {
@@ -8,21 +8,30 @@ const config: ThemeConfig = {
 };
 
 const fonts = {
-    body: "'Urbanist', sans-serif",
-    heading: "'Playfair Display', serif;",
+    body: "'Inter', serif",
+    heading: "'Outfit', serif",
 };
 
 const colors = {
     primary: {
-        ...PrimaryColors,
+        ...GunmetalColors,  // Replacing PrimaryColors
+    },
+    accent: {
+        ...CoralColors,  // Can use this for buttons, highlights, etc.
+    },
+    secondary: {
+        ...TealColors,
+    },
+    highlight: {
+        ...LavenderColors,
     },
     gray: {
-        ...PrimaryDarkColors,
+        ...WhiteColors,  // White can be used in place of gray
     },
 };
 
-export const bgLight = "white";
-export const bgDark = "gray.800";
+export const bgLight = "gray.200";
+export const bgDark = "primary.400";
 export const NavbarHeight = "144px";
 
 export const theme = extendTheme(

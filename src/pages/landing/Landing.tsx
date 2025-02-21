@@ -44,11 +44,28 @@ export const Landing: FC = () => {
                         data-aos="fade-up"
                         data-aos-delay="400"
                     >
-                        <picture>
-                            <source type="image/webp" src={configs.landing.picture}></source>
-                            <source type="image/jpeg" src={configs.landing.jpg}></source>
-                            <Image borderRadius="md" src={configs.landing.jpg} alt={`Carmen Shiu`} />
-                        </picture>
+                        <Box position="relative" display="inline-block">
+                            <Box
+                                position="absolute"
+                                top="8px"
+                                left="8px"
+                                width="100%"
+                                height="100%"
+                                border="2px solid #ff686b"
+                                borderRadius="5px"
+                                boxSizing="border-box"
+                                zIndex={1}
+                            />
+                            <picture>
+                                <source type="image/webp" src={configs.landing.picture}></source>
+                                <source type="image/jpeg" src={configs.landing.jpg}></source>
+                                <Image
+                                    borderRadius="md"
+                                    src={configs.landing.jpg}
+                                    alt={`Carmen Shiu`}
+                                />
+                            </picture>
+                        </Box>
                     </Container>
                     <Stack flex="1" spacing="16">
                         <Stack spacing="8">
@@ -71,8 +88,6 @@ export const Landing: FC = () => {
                                     />
                                 </Text>
                             )}
-
-                            {/* Custom style for 'strong' elements */}
                             <style>
                                 {`
                                     #page-landing p {

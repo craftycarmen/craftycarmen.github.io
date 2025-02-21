@@ -12,7 +12,7 @@ import { ColorModeButton } from "shared/color-mode-button/ColorModeButton";
 
 export const Navbar: FC = () => {
     const bg = useColorModeValue(bgLight, bgDark);
-    const navItemColor = useColorModeValue("gray.800", "white");
+    const navItemColor = useColorModeValue("secondary.400", "secondary.400");
     const currentPage = useScroll();
 
     const toSection = (section: string) => {
@@ -23,7 +23,11 @@ export const Navbar: FC = () => {
         <Box bg={bg} position="fixed" top="0" w="100%" left="50%" transform="translate(-50%)" zIndex="10">
             <Container py="4" px="4" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100">
                 <Flex justifyContent="space-between" alignItems="center">
-                    <LogoType text={configs.common.logoType} />
+                    <LogoType
+
+                        text={configs.common.logoType}
+
+                    />
                     <Flex alignItems="center" display={{ base: "none", md: "flex" }}>
                         <HStack spacing="8" mr="6">
                             <Button
@@ -31,7 +35,7 @@ export const Navbar: FC = () => {
                                 color={navItemColor}
                                 textDecoration="underline"
                                 textDecorationThickness="2px"
-                                textDecorationColor={currentPage === WorkPageId ? "primary.500" : "transparent"}
+                                textDecorationColor={currentPage === WorkPageId ? "primary.400" : "transparent"}
                                 onClick={() => toSection(WorkPageId)}
                                 data-aos="fade"
                                 data-aos-delay="200"
@@ -43,14 +47,16 @@ export const Navbar: FC = () => {
                                 color={navItemColor}
                                 textDecoration={currentPage === AboutPageId ? "underline" : "none"}
                                 textDecorationThickness="2px"
-                                textDecorationColor="primary.500"
+                                textDecorationColor="primary.400"
                                 onClick={() => toSection(AboutPageId)}
                                 data-aos="fade"
                                 data-aos-delay="300"
                             >
                                 About
                             </Button>
-                            <Button variant="link" onClick={onResumeOpen} data-aos="fade" data-aos-delay="400">
+                            <Button variant="link" onClick={onResumeOpen} data-aos="fade" data-aos-delay="400"
+                                color="secondary.400"
+                            >
                                 Resume
                             </Button>
                         </HStack>

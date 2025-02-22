@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 
-import { Text, Box, Accordion, AccordionItem } from "@chakra-ui/react";
+import { Text, Box, UnorderedList, Accordion, AccordionItem } from "@chakra-ui/react";
 import { configs } from "shared/content/Content";
 import { Expandable } from "pages/about/common/expandable/Expandable";
 import { ArticleTitle, SectionTitle } from "pages/about/common/title/Title";
@@ -22,9 +22,11 @@ export const Education: FC = () => {
                     <Text color="gray" data-aos="fade-up" fontSize="sm" fontWeight="semibold">
                         {edu.duration}
                     </Text>
-                    <Text pt="2" data-aos="fade">
-                        {edu.content}
-                    </Text>
+                    <UnorderedList listStylePosition="outside" pl="1">
+                        <Text as="li" pt="2" data-aos="fade">
+                            {edu.content}
+                        </Text>
+                    </UnorderedList>
                 </Box>
             ))}
             {/* <Accordion pt="2" allowMultiple index={educationExpanded} id="education">

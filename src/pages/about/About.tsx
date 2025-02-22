@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState, useEffect } from "react";
 
 import { Box, Flex, Heading, Text, Image, Button, IconButton } from "@chakra-ui/react";
 
@@ -8,9 +8,23 @@ import { Education } from "pages/about/education/Education";
 import { Experience } from "pages/about/experience/Experience";
 import { Skills } from "pages/about/skills/Skills";
 import { VolumeIcon } from "utils/Icons";
+import { marked } from "marked";
 
 export const About: FC = () => {
     const content = useContent(MarkdownFile.About);
+    const [parsedContent, setParsedContent] = useState<string>("");
+
+    // Use useEffect to parse the markdown once content is available
+    useEffect(() => {
+        const parseContent = async () => {
+            if (content.about) {
+                const parsed = await marked(content.about); // Ensure parsing is awaited
+                setParsedContent(parsed);
+            }
+        };
+
+        parseContent(); // Call the async function to parse content
+    }, [content.about]);
 
     // const onPlay = () => {
     //     const audio = new Audio(configs.common.audioFile);
@@ -28,7 +42,7 @@ export const About: FC = () => {
                     </picture>
                 </Box> */}
                 <Box flex="1">
-                    <Heading data-aos="fade-down">{configs.common.name}</Heading>
+                    <Heading data-aos="fade-down" color="accent.300">{configs.common.name}</Heading>
                     {/* <Flex alignItems="center">
                         <Text fontWeight="bold" opacity="0.5" data-aos="fade" data-aos-delay="200">
                             {configs.common.pronunciation}
@@ -47,7 +61,29 @@ export const About: FC = () => {
                         />
                     </Flex> */}
                     <Box pt="4" data-aos="fade-up" data-aos-delay="400">
-                        <Content fontSize="lg">{content.about}</Content>
+                        {/* <Content fontSize="lg">{content.about}</Content> */}
+                        {parsedContent && (
+                            <Text fontSize="lg">
+                                <Box
+                                    id="about-content"
+                                    as="div"
+                                    dangerouslySetInnerHTML={{ __html: parsedContent }}
+                                />
+                            </Text>
+                        )}
+                        <style>
+                            {`
+                                    #about-content p {
+                                        margin-bottom: 1.5rem;
+                                    }
+
+                                    #about-content strong {
+                                        font-weight: bold;
+                                        background-color: #d5dcf9;
+                                        color: #293132;
+                                    }
+                                `}
+                        </style>
                     </Box>
                 </Box>
             </Flex>

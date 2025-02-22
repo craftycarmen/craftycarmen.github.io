@@ -11,6 +11,7 @@ import { MenuDrawer } from "./drawer/Drawer";
 import { ColorModeButton } from "shared/color-mode-button/ColorModeButton";
 
 export const Navbar: FC = () => {
+    const bg = useColorModeValue(bgLight, bgDark);
     const navItemColor = useColorModeValue("secondary.400", "secondary.400");
     const currentPage = useScroll();
 
@@ -19,7 +20,7 @@ export const Navbar: FC = () => {
     };
 
     return (
-        <Box position="fixed" top="0" w="100%" left="50%" transform="translate(-50%)" zIndex="10">
+        <Box bg={bg} position="fixed" top="0" w="100%" left="50%" transform="translate(-50%)" zIndex="10">
             <Container py="4" px="4"
                 data-aos="fade-down" data-aos-duration="500" data-aos-delay="100"
             >

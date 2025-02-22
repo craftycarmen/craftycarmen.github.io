@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--chakra-colors-gray-200);
+}
+
+[data-theme="dark"] body {
+  background-color: var(--chakra-colors-primary-400);
+}
+
 html,
 body,
 #root {

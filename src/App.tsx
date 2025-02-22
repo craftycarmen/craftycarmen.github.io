@@ -1,9 +1,9 @@
 import { FC, useEffect, lazy, Suspense } from "react";
 
-import { Box, Container, Center, Spinner, useColorModeValue } from "@chakra-ui/react";
+import { Box, Container, Center, Spinner } from "@chakra-ui/react";
 import AOS from "aos";
 
-import { NavbarHeight, bgDark, bgLight } from "theme";
+import { NavbarHeight } from "theme";
 import { AboutPageId, WorkPageId } from "utils/useScroll";
 
 import "./App.scss";
@@ -38,11 +38,12 @@ export const App: FC = () => {
         AOS.init({ once: true });
     }, []);
 
-    const bg = useColorModeValue(bgLight, bgDark);
-
     return (
         <Suspense fallback={<Loader />}>
-            <Container h="100%" px={{ base: 6, md: 6, lg: 4 }} bg={bg}>
+            <Container
+                h="100%"
+                px={{ base: 6, md: 6, lg: 4 }}
+            >
                 <Navbar />
 
                 <Box mt={{ base: "96px", md: NavbarHeight }}>

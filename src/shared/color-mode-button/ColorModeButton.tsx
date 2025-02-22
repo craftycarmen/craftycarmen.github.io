@@ -1,11 +1,12 @@
 import { FC } from "react";
 
 import { HStack, IconButton, StyleProps, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { bgDark, bgLight } from "theme";
 
 import { MoonIcon, SunIcon } from "utils/Icons";
 
 export const ColorModeButton: FC<StyleProps> = (props) => {
-    const color = useColorModeValue("gray.800", "white");
+    const color = useColorModeValue(bgDark, bgLight);
     const { colorMode, toggleColorMode } = useColorMode();
 
     return (

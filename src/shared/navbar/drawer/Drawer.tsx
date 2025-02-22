@@ -22,6 +22,7 @@ import { AboutPageId, WorkPageId } from "utils/useScroll";
 import { MenuIcon } from "utils/Icons";
 import { Socials } from "shared/socials/Socials";
 import { onResumeOpen } from "utils/Functions";
+import { bgDark, bgLight } from "theme";
 
 interface Props extends StyleProps {
     onSectionClick: (section: string) => void;
@@ -31,7 +32,7 @@ interface Props extends StyleProps {
 export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef<any>(null);
-    const navItemColor = useColorModeValue("gray.800", "white");
+    const navItemColor = useColorModeValue(bgLight, bgDark);
 
     return (
         <Box {...props}>

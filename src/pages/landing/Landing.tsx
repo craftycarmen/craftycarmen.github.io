@@ -81,7 +81,7 @@ export const Landing: FC = () => {
                                 {configs.landing.subheadline}
                             </Heading>
                             {parsedContent && (
-                                <Text fontSize="lg" color="primary.400">
+                                <Text fontSize="lg">
                                     <Box
                                         as="div"
                                         dangerouslySetInnerHTML={{ __html: parsedContent }}
@@ -97,6 +97,7 @@ export const Landing: FC = () => {
                                     #page-landing strong {
                                         font-weight: bold;
                                         background-color: #d5dcf9;
+                                        color: #293132;
                                     }
                 `}
                             </style>

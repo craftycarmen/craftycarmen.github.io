@@ -6,6 +6,7 @@ import { components } from "theme/component-styles/ComponentStyles";
 const config: ThemeConfig = {
     cssVarPrefix: "hp",
     initialColorMode: "system",
+    useSystemColorMode: true,
 };
 
 const fonts = {
@@ -29,6 +30,10 @@ const colors = {
     gray: {
         ...WhiteColors,  // White can be used in place of gray
     },
+    background: {
+        light: "gray.200",
+        dark: "primary.400"
+    }
 };
 
 export const bgLight = "gray.200";
@@ -41,6 +46,15 @@ export const theme = extendTheme(
         colors,
         fonts,
         components,
+        styles: {
+            global: (props: { colorMode: string }) => ({
+                "html, body": {
+                    backgroundColor: props.colorMode === "dark" ? "primary.400" : "gray.200",
+                    color: props.colorMode === "dark" ? "gray.200" : "primary.400",
+                    // transition: "background-color 0.2s ease-in-out",
+                },
+            }),
+        },
     },
     withDefaultColorScheme({ colorScheme: "primary" }),
 );

@@ -11,7 +11,7 @@ body,
   cursor: url(./utils/assets/cursor.svg) 20 20, auto !important;
 
   *::selection {
-    background: var(--hp-colors-orange-200);
+    background: #fbb13c;
     transition: all 0.25s ease-in-out !important;
   }
 }

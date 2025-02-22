@@ -14,7 +14,7 @@ export const ColorModeButton: FC<StyleProps> = (props) => {
             <IconButton
                 aria-label="appearance"
                 bg="transparent"
-                color={color}
+                color="yellow.300"
                 fontSize="lg"
                 _hover={{ bg: "transparent" }}
                 // _active={{ bg: "transparent" }}

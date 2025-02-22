@@ -29,6 +29,9 @@ const colors = {
     gray: {
         ...WhiteColors,  // White can be used in place of gray
     },
+    yellow: {
+        ...YellowColors
+    },
     background: {
         light: "gray.200",
         dark: "primary.400"

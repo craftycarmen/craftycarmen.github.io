@@ -114,7 +114,7 @@ export const Landing: FC = () => {
                     variant="icon"
                     aria-label="down arrow button"
                     icon={<ChevronDownIcon />}
-                    color="secondary.400"
+                    color="yellow.300"
                     onClick={scrollIntoView}
                 >
                 </Button>

@@ -12,7 +12,6 @@ interface Props {
     id: string;
     title: string;
     year: string;
-    location: string;
     demo?: string;
     github?: string;
     tags: string[];
@@ -48,7 +47,6 @@ export const FeaturedProjectCard: FC<Props> = ({
     readMore,
     image,
     imagePosition,
-    location,
     year,
     jpg,
 }) => {
@@ -80,7 +78,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                         data-aos-delay="100"
                         data-aos-offset="200"
                     >
-                        {year} • {location}
+                        {year}
                     </Text>
 
                     <Box
@@ -102,7 +100,13 @@ export const FeaturedProjectCard: FC<Props> = ({
                         borderRadius="xl"
                         pb="2"
                     >
-                        {description}
+                        {description.split("\n").map((line, i) => (
+                            <span key={i}>
+                                {line}
+                                <br />
+                                <br />
+                            </span>
+                        ))}
                     </Text>
 
                     <Tags tags={tags} id={id} />
@@ -121,7 +125,7 @@ export const FeaturedProjectCard: FC<Props> = ({
             >
                 <picture>
                     <source type="image/webp" srcSet={image}></source>
-                    <source type="image/jpeg" srcSet={jpg}></source>
+                    <source type="image/png" srcSet={jpg}></source>
                     <Image
                         borderRadius="xl"
                         src={jpg}

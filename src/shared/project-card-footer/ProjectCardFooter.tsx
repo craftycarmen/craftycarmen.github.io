@@ -19,7 +19,7 @@ interface LiveDemoProps {
     display?: any;
 }
 
-interface Props extends GitHubButtonProps, ReadMoreProps, LiveDemoProps {}
+interface Props extends GitHubButtonProps, ReadMoreProps, LiveDemoProps { }
 
 export const ReadMore: FC<ReadMoreProps> = ({ readMore }) => {
     return readMore ? (
@@ -69,7 +69,7 @@ export const LiveDemo: FC<LiveDemoProps> = ({ demo, display }) => {
             icon={<LinkIcon fontSize="14pt" />}
             onClick={() => open(demo)}
         >
-            Live Demo
+            Live
         </Button>
     ) : null;
 };

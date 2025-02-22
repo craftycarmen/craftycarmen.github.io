@@ -19,25 +19,25 @@
         "jpg": "/assets/featured-projects/lingoai.png"
     },
     {
-        "id": "featured-project-asctb-reporter",
-        "title": "ASCT+B Reporter",
-        "year": "Jun 2020 - Jun 2021",
-        "location": "Indiana University",
-        "demo": "https://hubmapconsortium.github.io/ccf-asct-reporter/",
-        "github": "https://github.com/hrishikeshpaul/ccf-asct-reporter",
+        "id": "featured-project-plantera",
+        "title": "Plantera",
+        "year": "April 2024 - November 2024",
+        "demo": "https://plantera.carmenshiu.com",
+        "github": "https://github.com/craftycarmen/plantera",
         "tags": [
-            "Angular 11",
-            "TypeScript",
-            "NodeJS",
-            "NGXS",
-            "Vega",
-            "TravisCI",
-            "Open Source"
+            "Node.js",
+            "JavaScript",
+            "ExpressJS",
+            "PostgreSQL",
+            "Sequelize",
+            "React",
+            "Redux",
+            "Amazon Web Services (AWS)",
+            "Stripe"
         ],
-        "description": "A collaboration with the NIH to build visualization tool to envision large biomedical datasets for researchers, doctors and experts.",
-        "readMore": "https://hrishikeshpaul.medium.com/asct-b-reporter-a-visualization-tool-d4dd29de97d8",
-        "image": "/assets/featured-projects/asctb.webp",
-        "jpg": "/assets/featured-projects/asctb.jpeg"
+        "description": "A plant marketplace community platform where plant enthusiasts come together to shop and sell plants, and inspire others with plant care guides.",
+        "image": "/assets/featured-projects/plantera.webp",
+        "jpg": "/assets/featured-projects/plantera.png"
     },
     {
         "id": "featured-project-scrapbook",

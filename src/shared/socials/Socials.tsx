@@ -48,7 +48,8 @@ export const Socials: FC<Props> = ({ resume = true, exclude, delay = 800, color 
                             key={social.type}
                             label={social.type}
                             textTransform="capitalize"
-                        // bg={theme.colors.primary[400]}
+                            bg={theme.colors.highlight[200]}
+                            color={theme.colors.primary[400]}
                         >
                             <Button
                                 p="0"

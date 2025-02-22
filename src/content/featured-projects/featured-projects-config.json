@@ -6,6 +6,7 @@
         "demo": "https://lingo-ai.carmenshiu.com/",
         "github": "https://github.com/athena-codes/a-A-summer-hackathon",
         "tags": [
+            "Node.js",
             "JavaScript",
             "ExpressJS",
             "Firebase",
@@ -32,6 +33,8 @@
             "Sequelize",
             "React",
             "Redux",
+            "HTML5",
+            "CSS3",
             "Amazon Web Services (AWS)",
             "Stripe"
         ],
@@ -40,46 +43,25 @@
         "jpg": "/assets/featured-projects/plantera.png"
     },
     {
-        "id": "featured-project-scrapbook",
-        "title": "Scrapbook",
-        "year": "Jan 2021 - May 2021",
-        "location": "Indiana University",
+        "id": "featured-project-thepaw",
+        "title": "The Paw",
+        "year": "March 2024 - August 2024",
         "tags": [
-            "Angular 11",
-            "Flask",
-            "Node",
             "Python",
-            "TypeScript",
-            "Docker",
-            "Docker Hub",
-            "Jenkins",
-            "Kubernetes",
-            "GKE",
-            "GCP"
+            "Flask",
+            "JavaScript",
+            "PostgreSQL",
+            "React",
+            "Redux",
+            "HTML5",
+            "CSS3",
+            "Amazon Web Services (AWS)",
+            "Google Maps API"
         ],
-        "demo": "http://34.69.102.109/",
-        "github": "https://github.com/hrishikeshpaul/scrapbook",
-        "description": "A micro-service architecture based web application that enables users to upload, share and manage images.",
-        "readMore": "https://hrishikeshpaul.medium.com/scrapbook-a-micro-service-based-photo-sharing-application-3a8760681af6",
-        "image": "/assets/featured-projects/scrapbook.webp",
-        "jpg": "/assets/featured-projects/scrapbook.jpeg"
-    },
-    {
-        "id": "featured-project-measure-ux",
-        "location": "Indiana University",
-        "title": "Measuring User Experience",
-        "year": "Sep 2020 - Dec 2020",
-        "tags": [
-            "UX Research",
-            "User Journey",
-            "Experience Mapping",
-            "Surveys",
-            "Interviews",
-            "Adobe XD"
-        ],
-        "description": "A project to quantify user experiences demonstrated by measuring the user experience of uploading a photo on Instagram.",
-        "readMore": "https://hrishikeshpaul.medium.com/measuring-user-experience-an-instagram-case-study-89bfb78f2c6b",
-        "image": "/assets/featured-projects/measure-ux.webp",
-        "jpg": "/assets/featured-projects/measure-ux.jpeg"
+        "demo": "https://thepaw.carmenshiu.com/",
+        "github": "https://github.com/ballisticbutterflies/The-Paw",
+        "description": "A pet-friendly business review platform for businesses to showcase their services, and pet owners to share their experiences.",
+        "image": "/assets/featured-projects/thepaw.webp",
+        "jpg": "/assets/featured-projects/thepaw.png"
     }
 ]

@@ -50,6 +50,9 @@ export const GitHubButton: FC<GitHubButtonProps> = ({ github, display }) => {
             leftIcon={<GitHubIcon />}
             icon={<GitHubIcon />}
             onClick={() => open(github)}
+            bg="secondary.300"
+            color="gray.200"
+            _hover={{ bg: `secondary.300` }}
         >
             GitHub
         </Button>
@@ -68,6 +71,9 @@ export const LiveDemo: FC<LiveDemoProps> = ({ demo, display }) => {
             leftIcon={<LinkIcon fontSize="14pt" />}
             icon={<LinkIcon fontSize="14pt" />}
             onClick={() => open(demo)}
+            bg="secondary.300"
+            color="gray.200"
+            _hover={{ bg: `secondary.300` }}
         >
             Live
         </Button>

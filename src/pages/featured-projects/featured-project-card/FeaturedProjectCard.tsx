@@ -12,6 +12,7 @@ interface Props {
     id: string;
     title: string;
     year: string;
+    team: string;
     demo?: string;
     github?: string;
     tags: string[];
@@ -41,6 +42,7 @@ export const FeaturedProjectCard: FC<Props> = ({
     id,
     title,
     demo,
+    team,
     github,
     tags,
     description,
@@ -73,12 +75,13 @@ export const FeaturedProjectCard: FC<Props> = ({
                         pt="2"
                         fontSize="sm"
                         fontWeight="600"
+                        color="gray"
                         opacity="0.6"
                         data-aos="fade"
                         data-aos-delay="100"
                         data-aos-offset="200"
                     >
-                        {year}
+                        {year} • {team}
                     </Text>
 
                     <Box

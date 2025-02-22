@@ -3,6 +3,7 @@
         "id": "featured-project-lingoai",
         "title": "Lingo.ai",
         "year": "July 2024 - August 2024",
+        "team": "Part of a 5-member team",
         "demo": "https://lingo-ai.carmenshiu.com/",
         "github": "https://github.com/athena-codes/a-A-summer-hackathon",
         "tags": [
@@ -23,6 +24,7 @@
         "id": "featured-project-plantera",
         "title": "Plantera",
         "year": "April 2024 - November 2024",
+        "team": "Solo project",
         "demo": "https://plantera.carmenshiu.com",
         "github": "https://github.com/craftycarmen/plantera",
         "tags": [
@@ -46,6 +48,7 @@
         "id": "featured-project-thepaw",
         "title": "The Paw",
         "year": "March 2024 - August 2024",
+        "team": "Part of a 3-member team",
         "tags": [
             "Python",
             "Flask",

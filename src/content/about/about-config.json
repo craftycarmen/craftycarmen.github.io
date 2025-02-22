@@ -96,7 +96,8 @@
                 "Sequelize",
                 "SQLAlchemy",
                 "SQLite",
-                "Supabase"
+                "Supabase",
+                "Firebase"
             ]
         },
         {

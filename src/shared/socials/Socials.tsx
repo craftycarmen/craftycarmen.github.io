@@ -7,12 +7,12 @@ import { onResumeOpen, open } from "utils/Functions";
 import { FacebookIcon, GitHubIcon, InstagramIcon, LinkedInIcon, MailIcon, YoutubeIcon } from "utils/Icons";
 
 const LinksToIconMapper: Record<string, JSX.Element> = {
-    linkedin: <LinkedInIcon />,
-    github: <GitHubIcon />,
+    linkedIn: <LinkedInIcon />,
+    gitHub: <GitHubIcon />,
     facebook: <FacebookIcon />,
     instagram: <InstagramIcon />,
     youtube: <YoutubeIcon />,
-    mail: <MailIcon />,
+    email: <MailIcon />,
 };
 
 interface Props {
@@ -28,18 +28,26 @@ export const Socials: FC<Props> = ({ resume = true, exclude, delay = 800, color 
     return (
         <HStack spacing="5">
             {resume && (
-                <Button
-                    data-aos="fade"
-                    data-aos-delay={delay} size="lg"
-                    borderRadius="md"
-                    mr="2"
-                    onClick={onResumeOpen}
-                    bg={theme.colors.secondary[300]}
-                    color={color || theme.colors.gray[200]}
-                    _hover={{ bg: theme.colors.secondary[300] }}
+                <Tooltip
+                    key="Resume"
+                    label="Download Resume"
+                    textTransform="capitalize"
+                    bg={theme.colors.highlight[200]}
+                    color={theme.colors.primary[400]}
                 >
-                    Check Out My Resume
-                </Button>
+                    <Button
+                        data-aos="fade"
+                        data-aos-delay={delay} size="lg"
+                        borderRadius="md"
+                        mr="2"
+                        onClick={onResumeOpen}
+                        bg={theme.colors.secondary[300]}
+                        color={color || theme.colors.gray[200]}
+                        _hover={{ bg: theme.colors.secondary[300] }}
+                    >
+                        Check Out My Resume
+                    </Button>
+                </Tooltip>
             )}
             {configs.common.socials.map(
                 (social, idx) =>

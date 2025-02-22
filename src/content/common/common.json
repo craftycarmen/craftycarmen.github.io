@@ -8,20 +8,20 @@
     "mainPictureJPG": "/assets/face.jpg",
     "cssVarPrefix": "cs",
     "email": "hi@carmenshiu.com",
-    "linkedin": "https://www.linkedin.com/in/carmenshiu",
-    "github": "https://github.com/craftycarmen",
+    "linkedIn": "https://www.linkedin.com/in/carmenshiu",
+    "gitHub": "https://github.com/craftycarmen",
     "resume": "/assets/Carmen_Shiu_Resume.pdf",
     "socials": [
         {
-            "type": "linkedin",
+            "type": "linkedIn",
             "link": "https://www.linkedin.com/in/carmenshiu"
         },
         {
-            "type": "github",
+            "type": "gitHub",
             "link": "https://github.com/craftycarmen"
         },
         {
-            "type": "mail",
+            "type": "email",
             "link": "mailto:hi@carmenshiu.com"
         }
     ]

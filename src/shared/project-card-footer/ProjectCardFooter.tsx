@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { Button, Flex, IconButton, useBreakpointValue } from "@chakra-ui/react";
+import { Button, Flex, IconButton, useBreakpointValue, Tooltip } from "@chakra-ui/react";
 
 import { ArrowRightIcon, GitHubIcon, LinkIcon } from "utils/Icons";
 import { open } from "utils/Functions";
@@ -40,22 +40,30 @@ export const GitHubButton: FC<GitHubButtonProps> = ({ github, display }) => {
     const as = useBreakpointValue({ base: IconButton, lg: Button });
 
     return github ? (
-        <Button
-            data-aos="fade"
-            data-aos-delay="400"
-            as={as}
-            variant="secondary"
-            py="5"
-            display={display}
-            leftIcon={<GitHubIcon />}
-            icon={<GitHubIcon />}
-            onClick={() => open(github)}
-            bg="secondary.300"
-            color="gray.200"
-            _hover={{ bg: `secondary.300` }}
+        <Tooltip
+            key="GitHub"
+            label="View Code"
+            textTransform="capitalize"
+            bg="highlight.200"
+            color="primary.400"
         >
-            GitHub
-        </Button>
+            <Button
+                data-aos="fade"
+                data-aos-delay="400"
+                as={as}
+                variant="secondary"
+                py="5"
+                display={display}
+                leftIcon={<GitHubIcon />}
+                icon={<GitHubIcon />}
+                onClick={() => open(github)}
+                bg="secondary.300"
+                color="gray.200"
+                _hover={{ bg: `secondary.300` }}
+            >
+                GitHub
+            </Button>
+        </Tooltip>
     ) : null;
 };
 
@@ -63,20 +71,28 @@ export const LiveDemo: FC<LiveDemoProps> = ({ demo, display }) => {
     const as = useBreakpointValue({ base: IconButton, lg: Button });
 
     return demo ? (
-        <Button
-            data-aos="fade"
-            data-aos-delay="200"
-            as={as}
-            display={display}
-            leftIcon={<LinkIcon fontSize="14pt" />}
-            icon={<LinkIcon fontSize="14pt" />}
-            onClick={() => open(demo)}
-            bg="secondary.300"
-            color="gray.200"
-            _hover={{ bg: `secondary.300` }}
+        <Tooltip
+            key="Live"
+            label="View Live Site"
+            textTransform="capitalize"
+            bg="highlight.200"
+            color="primary.400"
         >
-            Live
-        </Button>
+            <Button
+                data-aos="fade"
+                data-aos-delay="200"
+                as={as}
+                display={display}
+                leftIcon={<LinkIcon fontSize="14pt" />}
+                icon={<LinkIcon fontSize="14pt" />}
+                onClick={() => open(demo)}
+                bg="secondary.300"
+                color="gray.200"
+                _hover={{ bg: `secondary.300` }}
+            >
+                Live
+            </Button>
+        </Tooltip>
     ) : null;
 };
 

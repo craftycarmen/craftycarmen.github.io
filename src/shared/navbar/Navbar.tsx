@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { Box, Button, Container, Flex, HStack, useColorModeValue } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, HStack, useColorModeValue, Tooltip } from "@chakra-ui/react";
 
 import { configs } from "shared/content/Content";
 import { LogoType } from "shared/navbar/logo-type/LogoType";
@@ -56,15 +56,23 @@ export const Navbar: FC = () => {
                             >
                                 The Road So Far
                             </Button>
-                            <Button
-                                // variant="link" 
-                                onClick={onResumeOpen} data-aos="fade" data-aos-delay="400"
-                                color="gray.400"
-                                backgroundColor="secondary.400"
-                                _hover={{ bg: `secondary.400` }}
+                            <Tooltip
+                                key="Resume"
+                                label="Download Resume"
+                                textTransform="capitalize"
+                                bg="highlight.200"
+                                color="primary.400"
                             >
-                                Resume
-                            </Button>
+                                <Button
+                                    // variant="link" 
+                                    onClick={onResumeOpen} data-aos="fade" data-aos-delay="400"
+                                    color="gray.400"
+                                    backgroundColor="secondary.400"
+                                    _hover={{ bg: `secondary.400` }}
+                                >
+                                    Resume
+                                </Button>
+                            </Tooltip>
                         </HStack>
                         <ColorModeButton />
                     </Flex>

@@ -66,7 +66,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                 flex={{ base: 1, lg: 0.6 }}
             >
                 <Box>
-                    <Heading data-aos="fade-down" data-aos-offset="200" fontSize="4xl" lineHeight="1">
+                    <Heading data-aos="fade-down" data-aos-offset="200" fontSize="4xl" lineHeight="1" color="accent.300">
                         {title}
                     </Heading>
                     <Text
@@ -127,7 +127,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                     <source type="image/webp" srcSet={image}></source>
                     <source type="image/png" srcSet={jpg}></source>
                     <Image
-                        borderRadius="xl"
+                        borderRadius="md"
                         src={jpg}
                         alt={`${title}-cover-image`}
                         transition="all 0.4s ease-in-out"

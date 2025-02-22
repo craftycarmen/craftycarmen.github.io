@@ -21,7 +21,7 @@ export const Footer: FC = () => {
         <>
             <PageHeader label="SAY HI" />
             <Flex pb="2" gap="3" overflow="hidden" alignItems="center">
-                <Heading {...headerStyles} onClick={onMailTo} fontSize="2xl" color="accent.300">
+                <Heading {...headerStyles} onClick={onMailTo} fontSize="2xl" color="secondary.400" _hover={{ color: `secondary,400`, textDecoration: `underline` }}>
                     {configs.common.email}
                 </Heading>
             </Flex>

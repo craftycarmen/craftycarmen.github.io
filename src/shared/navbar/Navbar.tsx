@@ -56,8 +56,12 @@ export const Navbar: FC = () => {
                             >
                                 About
                             </Button>
-                            <Button variant="link" onClick={onResumeOpen} data-aos="fade" data-aos-delay="400"
-                                color="secondary.400"
+                            <Button
+                                // variant="link" 
+                                onClick={onResumeOpen} data-aos="fade" data-aos-delay="400"
+                                color="gray.400"
+                                backgroundColor="secondary.400"
+                                _hover={{ bg: `secondary.400` }}
                             >
                                 Resume
                             </Button>

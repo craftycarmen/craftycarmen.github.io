@@ -36,9 +36,9 @@ export const Socials: FC<Props> = ({ resume = true, exclude, delay = 800, color 
                     onClick={onResumeOpen}
                     bg={theme.colors.secondary[300]}
                     color={color || theme.colors.gray[200]}
-                    _hover={{ bg: theme.colors.highlight[200] }}
+                    _hover={{ bg: theme.colors.secondary[300] }}
                 >
-                    Resume
+                    View My Resume
                 </Button>
             )}
             {configs.common.socials.map(
@@ -62,7 +62,7 @@ export const Socials: FC<Props> = ({ resume = true, exclude, delay = 800, color 
                                 icon={LinksToIconMapper[social.type]}
                                 onClick={() => open(social.link)}
                                 color={color || theme.colors.secondary[400]}
-                                _hover={{ color: theme.colors.highlight[200], bg: "transparent" }}
+                                _hover={{ color: theme.colors.secondary[400], bg: "transparent" }}
                             />
                         </Tooltip>
                     ),

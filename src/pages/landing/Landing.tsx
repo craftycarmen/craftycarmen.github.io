@@ -46,6 +46,7 @@ export const Landing: FC = () => {
                                 data-aos-delay="400"
                             >
                                 {configs.landing.headline}
+                                <span className="waving-hand">👋🏻</span>
                                 <br />
                                 {configs.landing.subheadline}
                             </Heading>

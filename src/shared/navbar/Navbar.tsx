@@ -37,7 +37,7 @@ export const Navbar: FC = () => {
                                 color={navItemColor}
                                 textDecoration="underline"
                                 textDecorationThickness="2px"
-                                textDecorationColor={currentPage === WorkPageId ? "primary.400" : "transparent"}
+                                textDecorationColor={currentPage === WorkPageId ? "secondary.400" : "transparent"}
                                 onClick={() => toSection(WorkPageId)}
                                 data-aos="fade"
                                 data-aos-delay="200"
@@ -49,7 +49,7 @@ export const Navbar: FC = () => {
                                 color={navItemColor}
                                 textDecoration={currentPage === AboutPageId ? "underline" : "none"}
                                 textDecorationThickness="2px"
-                                textDecorationColor="primary.400"
+                                textDecorationColor="secondary.400"
                                 onClick={() => toSection(AboutPageId)}
                                 data-aos="fade"
                                 data-aos-delay="300"

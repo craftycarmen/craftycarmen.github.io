@@ -36,7 +36,7 @@ export const Landing: FC = () => {
         <Box id="page-landing">
             <Center pb={{ base: 16, md: 32 }}>
                 <HStack justifyContent="flex-end" alignItems="flex-start" spacing={{ base: 8, md: 16 }}>
-                    <Stack flex="1" >
+                    <Stack flex="1">
                         <Stack spacing="8">
                             <Heading
                                 fontSize={{ base: "5xl", md: "7xl" }}

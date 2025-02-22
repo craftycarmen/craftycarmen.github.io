@@ -35,39 +35,8 @@ export const Landing: FC = () => {
     return (
         <Box id="page-landing">
             <Center pb={{ base: 16, md: 32 }}>
-                <HStack justifyContent="space-between" alignItems="flex-start">
-                    <Container
-                        // flex="0.4"
-                        // display={{ base: "none", lg: "block" }}
-                        maxWidth={{ base: "40%", md: "30%" }}
-                        display="inline-block"
-                        data-aos="fade-up"
-                        data-aos-delay="400"
-                    >
-                        <Box position="relative" display="inline-block">
-                            <Box
-                                position="absolute"
-                                top="8px"
-                                left="8px"
-                                width="100%"
-                                height="100%"
-                                border="2px solid #ff686b"
-                                borderRadius="5px"
-                                boxSizing="border-box"
-                                zIndex={1}
-                            />
-                            <picture>
-                                <source type="image/webp" src={configs.landing.picture}></source>
-                                <source type="image/jpeg" src={configs.landing.jpg}></source>
-                                <Image
-                                    borderRadius="md"
-                                    src={configs.landing.jpg}
-                                    alt={`Carmen Shiu`}
-                                />
-                            </picture>
-                        </Box>
-                    </Container>
-                    <Stack flex="1" spacing="16">
+                <HStack justifyContent="flex-end" alignItems="flex-start" spacing={{ base: 8, md: 16 }}>
+                    <Stack flex="1" >
                         <Stack spacing="8">
                             <Heading
                                 fontSize={{ base: "5xl", md: "7xl" }}
@@ -99,12 +68,42 @@ export const Landing: FC = () => {
                                         background-color: #d5dcf9;
                                         color: #293132;
                                     }
-                `}
+                                `}
                             </style>
                         </Stack>
-
                         <Socials delay={1000} />
                     </Stack>
+                    <Container
+                        // flex="0.4"
+                        // display={{ base: "none", lg: "block" }}
+                        maxWidth={{ base: "40%", md: "30%" }}
+                        display="inline-block"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                    >
+                        <Box position="relative" display="inline-block">
+                            <Box
+                                position="absolute"
+                                top="8px"
+                                left="8px"
+                                width="100%"
+                                height="100%"
+                                border="2px solid #ff686b"
+                                borderRadius="5px"
+                                boxSizing="border-box"
+                                zIndex={1}
+                            />
+                            <picture>
+                                <source type="image/webp" src={configs.landing.picture}></source>
+                                <source type="image/jpeg" src={configs.landing.jpg}></source>
+                                <Image
+                                    borderRadius="md"
+                                    src={configs.landing.jpg}
+                                    alt={`Carmen Shiu`}
+                                />
+                            </picture>
+                        </Box>
+                    </Container>
                 </HStack>
             </Center>
             <Flex justifyContent="center" data-aos="fade" data-aos-delay="1400">

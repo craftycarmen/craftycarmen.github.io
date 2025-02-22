@@ -1,0 +1,130 @@
+{
+    "educations": [
+        {
+            "id": "edu-1",
+            "school": "App Academy",
+            "degree": "Full-Stack Web Development",
+            "duration": "May 2023 - May 2024",
+            "content": [
+                "Curriculum: Programming Fundamentals, Computer Science, Web Development Fundamentals, Backend Engineering, Frontend Engineering, Python"
+            ]
+        },
+        {
+            "id": "edu-2",
+            "school": "San Jose State University",
+            "degree": "Bachelor of Science in Public Relations",
+            "duration": "August 2010 - May 2012",
+            "content": [
+                "Academic Focus: Marketing"
+            ]
+        }
+    ],
+    "experiences": [
+        {
+            "id": "exp-1",
+            "company": "Suasiv",
+            "position": "Frontend Engineer & Technical Advisor",
+            "duration": "December 2024 - Present",
+            "description": [
+                "Building new dashboard components with Next.js, TypeScript, and Tailwind CSS, and refining the homepage",
+                "Partnering with backend developer to ensure seamless integration with frontend",
+                "Advising on technical architecture, stack selection, and best practices for efficient development",
+                "Participating in strategy meetings, providing code reviews, and guiding technical decisions"
+            ]
+        },
+        {
+            "id": "exp-2",
+            "company": "Angles, Inc.",
+            "position": "Production Manager",
+            "duration": "October 2023 - Present",
+            "description": [
+                "Creating custom HubSpot website features using HTML, CSS, JavaScript, and HubSpot Markup Language (HubL)",
+                "Managing website overhauls by coordinating with designers, developers, and clients",
+                "Updating marketing assets for clients, such as two-pagers and business cards",
+                "Streamlining collaboration and project management by optimizing workflows in ClickUp",
+                "Directing ad production and web initiatives, driving $100,000+ in revenue for clients"
+            ]
+        },
+        {
+            "id": "exp-3",
+            "company": "CLEVER Influencer Marketing Agency",
+            "position": "Senior Product Manager & Project Manager",
+            "duration": "February 2012 - February 2023",
+            "description": [
+                "Collaborated with software engineers to design and implement proprietary dashboards",
+                "Initiated strategic efforts, such as a Pricing Workbook to optimize budget allocation and client guarantees",
+                "Launched 6 cross-functional projects, contributing to a 90% client retention rate"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "title": "Programming",
+            "tools": [
+                "JavaScript",
+                "Python",
+                "TypeScript"
+            ]
+        },
+        {
+            "title": "Frontend Development",
+            "tools": [
+                "React",
+                "Next.js",
+                "Redux",
+                "Tailwind CSS",
+                "Material UI",
+                "HTML5",
+                "CSS3",
+                "Performance Optimization"
+            ]
+        },
+        {
+            "title": "Backend Development",
+            "tools": [
+                "Node.js",
+                "Express.js",
+                "Flask",
+                "RESTful APIs",
+                "Third-party API Integrations"
+            ]
+        },
+        {
+            "title": "Databases",
+            "tools": [
+                "PostgreSQL",
+                "Sequelize",
+                "SQLAlchemy",
+                "SQLite",
+                "Supabase",
+                "Firebase"
+            ]
+        },
+        {
+            "title": "Dev Practices & Tools",
+            "tools": [
+                "MacOS",
+                "Git",
+                "Quality Assurance",
+                "Pair Programming",
+                "Object-Oriented Programming (OOP)",
+                "GitHub Actions",
+                "Render Deployment",
+                "Vercel Deployment",
+                "Testing & Debugging"
+            ]
+        },
+        {
+            "title": "Strategy & Design",
+            "tools": [
+                "Project Management",
+                "Product Management",
+                "Adobe Photoshop",
+                "Canva",
+                "User Research",
+                "Cross-Functional Collaboration",
+                "Agile & Scrum"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Carmen Shiu",
+    "logoType": {
+        "mobile": "CS",
+        "desktop": "Carmen Shiu"
+    },
+    "mainPicture": "/assets/face.webp",
+    "mainPictureJPG": "/assets/face.jpg",
+    "cssVarPrefix": "cs",
+    "email": "hi@carmenshiu.com",
+    "linkedIn": "https://www.linkedin.com/in/carmenshiu",
+    "gitHub": "https://github.com/craftycarmen",
+    "resume": "/assets/Carmen_Shiu_Resume.pdf",
+    "socials": [
+        {
+            "type": "linkedIn",
+            "link": "https://www.linkedin.com/in/carmenshiu"
+        },
+        {
+            "type": "gitHub",
+            "link": "https://github.com/craftycarmen"
+        },
+        {
+            "type": "email",
+            "link": "mailto:hi@carmenshiu.com"
+        }
+    ]
+}

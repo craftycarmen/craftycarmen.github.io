@@ -1,0 +1,70 @@
+[
+    {
+        "id": "featured-project-lingoai",
+        "title": "Lingo.ai",
+        "year": "July 2024 - August 2024",
+        "team": "Part of a 5-member team",
+        "demo": "https://lingo-ai.carmenshiu.com/",
+        "github": "https://github.com/athena-codes/a-A-summer-hackathon",
+        "tags": [
+            "Node.js",
+            "JavaScript",
+            "Express.js",
+            "Firebase",
+            "Gemini AI",
+            "React",
+            "Redux",
+            "Material UI (MUI)"
+        ],
+        "description": "🏆 Second Place - App Academy Summer 2024 Hackathon: AI for Social Good\n An LLM-powered flashcard web application for non-native English speakers to enhance their skills through interactive AI-generated questions.",
+        "image": "/assets/featured-projects/lingoai.webp",
+        "jpg": "/assets/featured-projects/lingoai.png"
+    },
+    {
+        "id": "featured-project-plantera",
+        "title": "Plantera",
+        "year": "April 2024 - November 2024",
+        "team": "Solo project",
+        "demo": "https://plantera.carmenshiu.com",
+        "github": "https://github.com/craftycarmen/plantera",
+        "tags": [
+            "Node.js",
+            "JavaScript",
+            "Express.js",
+            "PostgreSQL",
+            "Sequelize",
+            "React",
+            "Redux",
+            "HTML5",
+            "CSS3",
+            "Amazon Web Services (AWS)",
+            "Stripe"
+        ],
+        "description": "A plant marketplace community platform where plant enthusiasts come together to shop and sell plants, and inspire others with plant care guides.",
+        "image": "/assets/featured-projects/plantera.webp",
+        "jpg": "/assets/featured-projects/plantera.png"
+    },
+    {
+        "id": "featured-project-thepaw",
+        "title": "The Paw",
+        "year": "March 2024 - August 2024",
+        "team": "Part of a 3-member team",
+        "tags": [
+            "Python",
+            "Flask",
+            "JavaScript",
+            "PostgreSQL",
+            "React",
+            "Redux",
+            "HTML5",
+            "CSS3",
+            "Amazon Web Services (AWS)",
+            "Google Maps API"
+        ],
+        "demo": "https://thepaw.carmenshiu.com/",
+        "github": "https://github.com/ballisticbutterflies/The-Paw",
+        "description": "A pet-friendly business review platform for businesses to showcase their services, and pet owners to share their experiences.",
+        "image": "/assets/featured-projects/thepaw.webp",
+        "jpg": "/assets/featured-projects/thepaw.png"
+    }
+]

@@ -1,0 +1,66 @@
+@import "src/theme/fonts/font.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  // cursor: url(./utils/assets/cursor.svg) 20 20, auto !important;
+
+  *::selection {
+    background: #fbb13c;
+    transition: all 0.25s ease-in-out !important;
+  }
+}
+
+.autograph__path {
+  opacity: 0;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  .animated & {
+    opacity: 1;
+    animation-name: line;
+  }
+}
+
+@keyframes line {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  40% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.waving-hand {
+  display: inline-block;
+  animation: wave 1s infinite ease-in-out;
+  transform-origin: center bottom;
+}

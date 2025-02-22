@@ -84,8 +84,8 @@ export const Landing: FC = () => {
                         <Box position="relative" display="inline-block">
                             <Box
                                 position="absolute"
-                                top="8px"
-                                left="8px"
+                                top="5px"
+                                left="5px"
                                 width="100%"
                                 height="100%"
                                 border="2px solid #ff686b"
@@ -100,6 +100,7 @@ export const Landing: FC = () => {
                                     borderRadius="md"
                                     src={configs.landing.jpg}
                                     alt={`Carmen Shiu`}
+                                    boxShadow="10px 10px 0px rgba(213, 220, 249, 1)"
                                 />
                             </picture>
                         </Box>

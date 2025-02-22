@@ -9,7 +9,7 @@ const config: ThemeConfig = {
 };
 
 const fonts = {
-    body: "'Inter', serif",
+    body: "'Space Mono', serif",
     heading: "'Outfit', serif",
 };
 

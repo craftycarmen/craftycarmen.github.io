@@ -14,20 +14,26 @@ export const Experience: FC = () => {
             <ArticleTitle title="Experience" />
             <br />
             <Accordion pt="2" allowMultiple index={experiencesExpanded}>
-                {configs.about.experiences.map((exp, idx) => (
-                    <AccordionItem p="0" border="0" mb="4" key={`panel-${exp.company}`}>
-                        <Expandable
-                            id={exp.id}
-                            title={exp.company}
-                            subTitle={exp.position}
-                            date={exp.duration}
-                            content={exp.description}
-                            idx={idx}
-                            onChange={setExperiencesExpanded}
-                            expanded={experiencesExpanded}
-                        />
-                    </AccordionItem>
-                ))}
+                {configs.about.experiences.map((exp, idx) => {
+                    if (exp.company === "Suasiv" || idx === 0) {
+                        return null;
+                    }
+
+                    return (
+                        <AccordionItem p="0" border="0" mb="4" key={`panel-${exp.company}`}>
+                            <Expandable
+                                id={exp.id}
+                                title={exp.company}
+                                subTitle={exp.position}
+                                date={exp.duration}
+                                content={exp.description}
+                                idx={idx}
+                                onChange={setExperiencesExpanded}
+                                expanded={experiencesExpanded}
+                            />
+                        </AccordionItem>
+                    )
+                })}
             </Accordion>
         </>
     );

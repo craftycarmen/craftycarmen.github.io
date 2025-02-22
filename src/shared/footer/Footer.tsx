@@ -35,12 +35,11 @@ export const Footer: FC = () => {
                 pt="4"
                 pb="2"
                 fontSize="sm"
-                color="gray.500"
-                justifyContent={{ base: "center", md: "space-between" }}
+                justifyContent="flex-end"
                 direction={{ base: "column", md: "row" }}
             >
-                <Text>This site is hand-crafted, with care by me.</Text>
-                <Text>&copy; {new Date().getFullYear()} All rights reserved.</Text>
+                {/* <Text>This site is hand-crafted, with care by me.</Text> */}
+                <Text>&copy;2024–2025 Carmen Shiu</Text>
             </Flex>
         </>
     );

@@ -22,7 +22,7 @@ import { AboutPageId, WorkPageId } from "utils/useScroll";
 import { MenuIcon } from "utils/Icons";
 import { Socials } from "shared/socials/Socials";
 import { onResumeOpen } from "utils/Functions";
-import { bgDark, bgLight } from "theme";
+// import { bgDark, bgLight } from "theme";
 
 interface Props extends StyleProps {
     onSectionClick: (section: string) => void;
@@ -32,7 +32,7 @@ interface Props extends StyleProps {
 export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef<any>(null);
-    const navItemColor = useColorModeValue(bgLight, bgDark);
+    // const navItemColor = useColorModeValue(bgLight, bgDark);
 
     return (
         <Box {...props}>
@@ -61,7 +61,7 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                         <VStack spacing="6" my="16">
                             <Button
                                 variant="link"
-                                color={navItemColor}
+                                // color={navItemColor}
                                 textDecoration="underline"
                                 textDecorationThickness="2px"
                                 textDecorationColor={currentPage === WorkPageId ? "primary.500" : "transparent"}
@@ -80,7 +80,7 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                             </Button>
                             <Button
                                 variant="link"
-                                color={navItemColor}
+                                // color={navItemColor}
                                 textDecoration={currentPage === AboutPageId ? "underline" : "none"}
                                 textDecorationThickness="2px"
                                 textDecorationColor="primary.500"

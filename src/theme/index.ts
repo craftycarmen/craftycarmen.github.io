@@ -4,7 +4,6 @@ import { GunmetalColors, CoralColors, TealColors, LavenderColors, WhiteColors, Y
 import { components } from "theme/component-styles/ComponentStyles";
 
 const config: ThemeConfig = {
-    cssVarPrefix: "hp",
     initialColorMode: "system",
     useSystemColorMode: true,
 };
@@ -51,7 +50,10 @@ export const theme = extendTheme(
                 "html, body": {
                     backgroundColor: props.colorMode === "dark" ? "primary.400" : "gray.200",
                     color: props.colorMode === "dark" ? "gray.200" : "primary.400",
-                    // transition: "background-color 0.2s ease-in-out",
+                    transition: "background-color 0.2s ease-in-out",
+                },
+                "*": {
+                    transition: "background-color 0.2s ease-in-out", // Applies to all elements
                 },
             }),
         },

@@ -9,7 +9,6 @@ const TextStyles: ComponentStyleConfig = {
 const ContainerStyles: ComponentStyleConfig = {
     baseStyle: (props) => ({
         maxW: "container.xl",
-        bg: props.colorMode === "dark" ? "primary.400" : "gray.200",
     }),
 };
 

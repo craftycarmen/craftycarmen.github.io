@@ -12,7 +12,7 @@ import "./index.scss";
 ReactDOM.render(
     <React.StrictMode>
         <ChakraProvider theme={theme}>
-            <ColorModeScript />
+            <ColorModeScript initialColorMode={theme.config.initialColorMode} />
             <App />
         </ChakraProvider>
     </React.StrictMode>,

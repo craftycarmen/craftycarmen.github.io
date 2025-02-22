@@ -89,7 +89,7 @@ export const Landing: FC = () => {
                                 width="100%"
                                 height="100%"
                                 border="2px solid #ff686b"
-                                borderRadius="8px"
+                                borderRadius="6px"
                                 boxSizing="border-box"
                                 zIndex={1}
                             />
@@ -100,7 +100,7 @@ export const Landing: FC = () => {
                                     borderRadius="md"
                                     src={configs.landing.jpg}
                                     alt={`Carmen Shiu`}
-                                    boxShadow="10px 10px 0px rgba(213, 220, 249, 1)"
+                                    boxShadow="9px 9px 0px rgba(213, 220, 249, 1)"
                                 />
                             </picture>
                         </Box>

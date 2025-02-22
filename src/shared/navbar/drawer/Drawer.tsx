@@ -18,7 +18,7 @@ import {
 } from "@chakra-ui/react";
 
 import { ColorModeButton } from "shared/color-mode-button/ColorModeButton";
-import { AboutPageId, WorkPageId } from "utils/useScroll";
+import { AboutPageId, ProjectsPageId } from "utils/useScroll";
 import { MenuIcon } from "utils/Icons";
 import { Socials } from "shared/socials/Socials";
 import { onResumeOpen } from "utils/Functions";
@@ -64,11 +64,11 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                                 // color={navItemColor}
                                 textDecoration="underline"
                                 textDecorationThickness="2px"
-                                textDecorationColor={currentPage === WorkPageId ? "primary.500" : "transparent"}
+                                textDecorationColor={currentPage === ProjectsPageId ? "primary.500" : "transparent"}
                                 onClick={() => {
                                     onClose();
                                     setTimeout(() => {
-                                        onSectionClick(WorkPageId);
+                                        onSectionClick(ProjectsPageId);
                                     }, 250);
                                 }}
                                 data-aos="fade"

@@ -4,7 +4,7 @@ import { Box, Container, Center, Spinner, useColorModeValue } from "@chakra-ui/r
 import AOS from "aos";
 
 import { NavbarHeight, bgDark, bgLight } from "theme";
-import { AboutPageId, WorkPageId } from "utils/useScroll";
+import { AboutPageId, ProjectsPageId } from "utils/useScroll";
 
 import "./App.scss";
 import "aos/dist/aos.css";
@@ -51,8 +51,8 @@ export const App: FC = () => {
 
                 <Box mt={{ base: "96px", md: NavbarHeight }}>
                     <Landing />
-                    <Box id={WorkPageId}>
-                        <PageHeader label="Featured Projects" />
+                    <Box id={ProjectsPageId}>
+                        <PageHeader label="Projects" />
                         <FeaturedProjects />
 
                         <PageHeader id="page-other-projects" label="Other Projects" />

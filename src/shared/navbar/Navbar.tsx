@@ -6,7 +6,7 @@ import { configs } from "shared/content/Content";
 import { LogoType } from "shared/navbar/logo-type/LogoType";
 import { bgDark, bgLight } from "theme";
 import { onResumeOpen } from "utils/Functions";
-import { AboutPageId, useScroll, WorkPageId } from "utils/useScroll";
+import { AboutPageId, useScroll, ProjectsPageId } from "utils/useScroll";
 import { MenuDrawer } from "./drawer/Drawer";
 import { ColorModeButton } from "shared/color-mode-button/ColorModeButton";
 
@@ -37,12 +37,12 @@ export const Navbar: FC = () => {
                                 color={navItemColor}
                                 textDecoration="underline"
                                 textDecorationThickness="2px"
-                                textDecorationColor={currentPage === WorkPageId ? "secondary.400" : "transparent"}
-                                onClick={() => toSection(WorkPageId)}
+                                textDecorationColor={currentPage === ProjectsPageId ? "secondary.400" : "transparent"}
+                                onClick={() => toSection(ProjectsPageId)}
                                 data-aos="fade"
                                 data-aos-delay="200"
                             >
-                                Work
+                                Projects
                             </Button>
                             <Button
                                 variant="link"

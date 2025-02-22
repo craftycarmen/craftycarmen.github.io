@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
-export const WorkPageId = "page-work";
+export const ProjectsPageId = "page-projects";
 export const AboutPageId = "page-about";
 
 export enum Page {
-    Work = "work",
+    Projects = "projects",
     About = "about",
 }
 
-const pageIds = [WorkPageId, AboutPageId];
+const pageIds = [ProjectsPageId, AboutPageId];
 
 export const useScroll = () => {
     const [page, setPage] = useState<string>("");
@@ -40,7 +40,7 @@ export const useScroll = () => {
         document.addEventListener("scroll", scrollHandler);
 
         return () => {
-            document.removeEventListener("scroll", () => {});
+            document.removeEventListener("scroll", () => { });
         };
     }, []);
 

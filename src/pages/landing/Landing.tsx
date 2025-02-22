@@ -4,7 +4,7 @@ import { Center, Container, Heading, Image, HStack, Stack, Flex, Box, IconButton
 
 import { Content, configs, useContent, MarkdownFile } from "shared/content/Content";
 import { Socials } from "shared/socials/Socials";
-import { WorkPageId } from "utils/useScroll";
+import { ProjectsPageId } from "utils/useScroll";
 import { ChevronDownIcon } from "utils/Icons";
 import { marked } from "marked";
 
@@ -25,7 +25,7 @@ export const Landing: FC = () => {
     }, [content.landing]);
 
     const scrollIntoView = () => {
-        const featuredHeader = document.getElementById(WorkPageId);
+        const featuredHeader = document.getElementById(ProjectsPageId);
 
         if (featuredHeader) {
             featuredHeader.scrollIntoView({ behavior: "smooth" });
@@ -89,7 +89,7 @@ export const Landing: FC = () => {
                                 width="100%"
                                 height="100%"
                                 border="2px solid #ff686b"
-                                borderRadius="5px"
+                                borderRadius="8px"
                                 boxSizing="border-box"
                                 zIndex={1}
                             />

@@ -1,13 +1,13 @@
 import { FC } from "react";
 
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 
 interface Props {
     id?: string;
     label: string;
 }
 export const PageHeader: FC<Props> = ({ id, label }) => {
-    const borderColor = "gray.500";
+    const borderColor = useColorModeValue("accent.300", "accent.300");
 
     return (
         <Box
@@ -27,7 +27,7 @@ export const PageHeader: FC<Props> = ({ id, label }) => {
             textTransform="uppercase"
             fontSize="xl"
         >
-            <Text as="span" color={borderColor} fontWeight="700">
+            <Text as="span" color={borderColor} fontWeight="700" fontFamily="Outfit">
                 {label}
             </Text>
         </Box>

@@ -60,7 +60,7 @@ export const App: FC = () => {
                     </Box>
 
                     <Box id={AboutPageId}>
-                        <PageHeader label="About Me" />
+                        <PageHeader label="Story" />
                         <About />
                     </Box>
                 </Box>

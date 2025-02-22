@@ -42,7 +42,7 @@ export const Navbar: FC = () => {
                                 data-aos="fade"
                                 data-aos-delay="200"
                             >
-                                Projects
+                                What I've Built
                             </Button>
                             <Button
                                 variant="link"
@@ -54,7 +54,19 @@ export const Navbar: FC = () => {
                                 data-aos="fade"
                                 data-aos-delay="300"
                             >
-                                About
+                                The Road So Far
+                            </Button>
+                            <Button
+                                variant="link"
+                                color={navItemColor}
+                                textDecoration={currentPage === AboutPageId ? "underline" : "none"}
+                                textDecorationThickness="2px"
+                                textDecorationColor="secondary.400"
+                                onClick={() => toSection(AboutPageId)}
+                                data-aos="fade"
+                                data-aos-delay="300"
+                            >
+                                Let's Connect
                             </Button>
                             <Button
                                 // variant="link" 

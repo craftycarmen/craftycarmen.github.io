@@ -52,7 +52,12 @@ export const Expandable: FC<Props> = ({ expanded, id, idx, title, subTitle, date
                     {date}
                 </Text>
                 <Flex pt="2" justifyContent="space-between" data-aos="fade">
-                    {!isExpanded ? (
+                    <UnorderedList listStylePosition="outside" pl="1">
+                        <Text as="li" id={`first-point-${id}`}>
+                            {content[0]}
+                        </Text>
+                    </UnorderedList>
+                    {/* {!isExpanded ? (
                         <Text id={`first-point-${id}`} isTruncated={!expanded.includes(idx)}>
                             {content[0]}
                         </Text>
@@ -62,14 +67,14 @@ export const Expandable: FC<Props> = ({ expanded, id, idx, title, subTitle, date
                                 {content[0]}
                             </Text>
                         </UnorderedList>
-                    )}
+                    )} */}
                     {showSeeMoreBtn && (
                         <Button
                             flexShrink={0}
                             id={`see-more-${id}`}
                             size="xs"
                             variant="link"
-                            colorScheme="gray"
+                            color="secondary.400"
                             opacity="0.8"
                             onClick={() => {
                                 if (!expanded.includes(idx)) {
@@ -99,7 +104,7 @@ export const Expandable: FC<Props> = ({ expanded, id, idx, title, subTitle, date
                             id={`see-less-${id}`}
                             size="xs"
                             variant="link"
-                            colorScheme="gray"
+                            color="secondary.400"
                             opacity="0.7"
                             onClick={() => {
                                 const newExpanded = expanded.filter((e) => e !== idx);

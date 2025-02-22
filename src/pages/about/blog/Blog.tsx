@@ -8,7 +8,7 @@ import { configs } from "shared/content/Content";
 export const Blog: FC = () => {
     return (
         <>
-            <ArticleTitle title="Blog" />
+            {/* <ArticleTitle title="Blog" />
             <br />
             {configs.about.blog.map((item) => (
                 <Box py="2" key={item.id}>
@@ -16,7 +16,7 @@ export const Blog: FC = () => {
                         {item.title}
                     </Link>
                 </Box>
-            ))}
+            ))} */}
         </>
     );
 };

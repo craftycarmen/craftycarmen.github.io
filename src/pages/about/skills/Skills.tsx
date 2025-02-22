@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { Box } from "@chakra-ui/react";
+import { Box, Grid } from "@chakra-ui/react";
 
 import { configs } from "shared/content/Content";
 import { Tags } from "shared/tags/Tags";
@@ -12,12 +12,21 @@ export const Skills: FC = () => {
             <ArticleTitle title="Skills" pb="2" />
 
             <br />
-            {configs.about.skills.map((skill) => (
+            <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap="4">
+                {configs.about.skills.map((skill) => (
+                    <Box p="0" mb="4" key={`skills-${skill.title}`}>
+                        <SectionTitle title={skill.title} />
+                        <Tags id={`skills-tags-${skill.title}`} tags={skill.tools} />
+                    </Box>
+                ))}
+            </Grid>
+
+            {/* {configs.about.skills.map((skill) => (
                 <Box p="0" mb="4" key={`skills-${skill.title}`}>
                     <SectionTitle title={skill.title} />
                     <Tags id={`skills-tags-${skill.title}`} tags={skill.tools} />
                 </Box>
-            ))}
+            ))} */}
         </>
     );
 };

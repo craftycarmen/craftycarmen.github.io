@@ -38,7 +38,7 @@ export const Socials: FC<Props> = ({ resume = true, exclude, delay = 800, color 
                     color={color || theme.colors.gray[200]}
                     _hover={{ bg: theme.colors.secondary[300] }}
                 >
-                    View My Resume
+                    Check Out My Resume
                 </Button>
             )}
             {configs.common.socials.map(

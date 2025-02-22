@@ -57,18 +57,6 @@ export const Navbar: FC = () => {
                                 The Road So Far
                             </Button>
                             <Button
-                                variant="link"
-                                color={navItemColor}
-                                textDecoration={currentPage === AboutPageId ? "underline" : "none"}
-                                textDecorationThickness="2px"
-                                textDecorationColor="secondary.400"
-                                onClick={() => toSection(AboutPageId)}
-                                data-aos="fade"
-                                data-aos-delay="300"
-                            >
-                                Let's Connect
-                            </Button>
-                            <Button
                                 // variant="link" 
                                 onClick={onResumeOpen} data-aos="fade" data-aos-delay="400"
                                 color="gray.400"

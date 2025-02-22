@@ -21,12 +21,12 @@ export const Footer: FC = () => {
         <>
             <PageHeader label="SAY HI" />
             <Flex pb="2" gap="3" overflow="hidden" alignItems="center">
-                <Heading {...headerStyles} onClick={onMailTo} fontSize="2xl">
+                <Heading {...headerStyles} onClick={onMailTo} fontSize="2xl" color="accent.300">
                     {configs.common.email}
                 </Heading>
             </Flex>
             <Text>
-                If you want to know more about my experiences and journey, or just talk in general, get in touch! ✌️
+                Want to know more about my experience or simply chat? Let's connect!
             </Text>
             <Box pt="16">
                 <Socials delay={100} exclude={["mail"]} />

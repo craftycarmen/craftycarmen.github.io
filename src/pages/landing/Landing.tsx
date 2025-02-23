@@ -35,7 +35,7 @@ export const Landing: FC = () => {
     return (
         <Box id="page-landing">
             <Center pb={{ base: 16, md: 32 }}>
-                <HStack justifyContent="flex-end" alignItems="flex-start" spacing={{ base: 8, md: 16 }}>
+                <HStack justifyContent="flex-end" alignItems="flex-start" spacing={{ base: 0, md: 16 }} direction={{ base: "column", md: "row" }} >
                     <Stack flex="1">
                         <Stack spacing="8">
                             <Heading
@@ -75,10 +75,10 @@ export const Landing: FC = () => {
                         <Socials delay={1000} />
                     </Stack>
                     <Container
-                        // flex="0.4"
-                        // display={{ base: "none", lg: "block" }}
+                        flex="0.4"
+                        display={{ base: "none", lg: "inline-block" }}
                         maxWidth={{ base: "40%", md: "30%" }}
-                        display="inline-block"
+                        // display="inline-block"
                         data-aos="fade-up"
                         data-aos-delay="400"
                     >

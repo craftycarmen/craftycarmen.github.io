@@ -51,7 +51,11 @@ export const Expandable: FC<Props> = ({ expanded, id, idx, title, subTitle, date
                 <Text color="gray" data-aos="fade-up" fontSize="sm" fontWeight="semibold">
                     {date}
                 </Text>
-                <Flex pt="2" justifyContent="space-between" data-aos="fade">
+                <Flex pt="2"
+                    justifyContent="flex-end"
+                    flexDirection="column"
+                    width="full"
+                    data-aos="fade">
                     <UnorderedList listStylePosition="outside" pl="1">
                         <Text as="li" id={`first-point-${id}`}>
                             {content[0]}
@@ -76,6 +80,7 @@ export const Expandable: FC<Props> = ({ expanded, id, idx, title, subTitle, date
                             variant="link"
                             color="secondary.400"
                             opacity="0.8"
+                            alignSelf="flex-end"
                             onClick={() => {
                                 if (!expanded.includes(idx)) {
                                     onChange([...expanded, idx]);
@@ -99,13 +104,18 @@ export const Expandable: FC<Props> = ({ expanded, id, idx, title, subTitle, date
                     ))}
                 </UnorderedList>
                 {expanded.includes(idx) && (
-                    <Flex justifyContent="flex-end">
+                    <Flex
+                        justifyContent="flex-end"
+                        flexDirection="column"
+                        width="full"
+                    >
                         <Button
                             id={`see-less-${id}`}
                             size="xs"
                             variant="link"
                             color="secondary.400"
                             opacity="0.7"
+                            alignSelf="flex-end"
                             onClick={() => {
                                 const newExpanded = expanded.filter((e) => e !== idx);
                                 onChange(newExpanded);

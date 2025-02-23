@@ -45,9 +45,9 @@ export const Socials: FC<Props> = ({ resume = true, exclude, delay = 800, color 
                         borderRadius="md"
                         mr="2"
                         onClick={onResumeOpen}
-                        bg={theme.colors.secondary[300]}
+                        bg={theme.colors.secondary[400]}
                         color={color || theme.colors.gray[200]}
-                        _hover={{ bg: theme.colors.secondary[300] }}
+                        _hover={{ bg: theme.colors.secondary[400] }}
                     >
                         Check Out My Resume
                     </Button>

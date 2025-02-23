@@ -46,6 +46,7 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                 fontSize="lg"
                 icon={<MenuIcon />}
                 px="0"
+                color={navItemColor}
             />
             <Drawer isOpen={isOpen} placement="right" onClose={onClose} autoFocus={false}>
                 <DrawerOverlay />

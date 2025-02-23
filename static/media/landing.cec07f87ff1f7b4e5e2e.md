@@ -1,1 +1,0 @@
-I’m a **Software Engineer** from the San Francisco Bay Area with a background in **project and product management**. What started with building fan sites as a kid has led me to a career in **full-stack web development**, bringing creative, impactful ideas to life through coding (and them some!).

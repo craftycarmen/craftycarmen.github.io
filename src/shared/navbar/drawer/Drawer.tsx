@@ -34,17 +34,19 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
     const btnRef = useRef<any>(null);
     const drawerBgColor = useColorModeValue(bgLight, bgDark);
     const navItemColor = useColorModeValue(bgDark, bgLight);
+    // const menuIconColor = useColorModeValue(primary.400, bgLight);
 
     return (
         <Box {...props}>
             <Button
                 as={IconButton}
-                variant="icon"
+                variant="ghost"
                 ref={btnRef}
                 onClick={onOpen}
                 aria-label="open drawer"
                 fontSize="lg"
-                icon={<MenuIcon color={useColorModeValue(bgDark, bgLight)} />}
+                icon={<MenuIcon />}
+                color={navItemColor}
                 px="0"
             />
             <Drawer isOpen={isOpen} placement="right" onClose={onClose} autoFocus={false}>

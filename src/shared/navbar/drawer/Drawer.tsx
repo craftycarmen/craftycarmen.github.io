@@ -22,7 +22,7 @@ import { AboutPageId, ProjectsPageId } from "utils/useScroll";
 import { MenuIcon } from "utils/Icons";
 import { Socials } from "shared/socials/Socials";
 import { onResumeOpen } from "utils/Functions";
-// import { bgDark, bgLight } from "theme";
+import { bgDark, bgLight } from "theme";
 
 interface Props extends StyleProps {
     onSectionClick: (section: string) => void;
@@ -32,7 +32,8 @@ interface Props extends StyleProps {
 export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef<any>(null);
-    // const navItemColor = useColorModeValue(bgLight, bgDark);
+    const drawerBgColor = useColorModeValue(bgLight, bgDark);
+    const navItemColor = useColorModeValue(bgDark, bgLight);
 
     return (
         <Box {...props}>
@@ -43,13 +44,12 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                 onClick={onOpen}
                 aria-label="open drawer"
                 fontSize="lg"
-                color="primary.500"
                 icon={<MenuIcon />}
                 px="0"
             />
             <Drawer isOpen={isOpen} placement="right" onClose={onClose} autoFocus={false}>
                 <DrawerOverlay />
-                <DrawerContent>
+                <DrawerContent bg={drawerBgColor}>
                     <DrawerHeader px="4">
                         <Flex justifyContent="space-between">
                             <ColorModeButton />
@@ -61,10 +61,10 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                         <VStack spacing="6" my="16">
                             <Button
                                 variant="link"
-                                // color={navItemColor}
+                                color={navItemColor}
                                 textDecoration="underline"
                                 textDecorationThickness="2px"
-                                textDecorationColor={currentPage === ProjectsPageId ? "primary.500" : "transparent"}
+                                textDecorationColor={currentPage === ProjectsPageId ? "secondary.400" : "transparent"}
                                 onClick={() => {
                                     onClose();
                                     setTimeout(() => {
@@ -76,14 +76,14 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                                 fontWeight="600"
                                 fontSize="2xl"
                             >
-                                Work
+                                Projects
                             </Button>
                             <Button
                                 variant="link"
-                                // color={navItemColor}
+                                color={navItemColor}
                                 textDecoration={currentPage === AboutPageId ? "underline" : "none"}
                                 textDecorationThickness="2px"
-                                textDecorationColor="primary.500"
+                                textDecorationColor="secondary.400"
                                 onClick={() => {
                                     onClose();
                                     setTimeout(() => {
@@ -95,11 +95,12 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                                 fontWeight="600"
                                 fontSize="2xl"
                             >
-                                About
+                                Story
                             </Button>
                             <Button
-                                variant="link"
-                                color="primary.500"
+                                color="gray.400"
+                                backgroundColor="secondary.400"
+                                _hover={{ bg: `secondary.400` }}
                                 onClick={onResumeOpen}
                                 data-aos="fade"
                                 data-aos-delay="400"

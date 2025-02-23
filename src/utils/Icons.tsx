@@ -6,7 +6,7 @@ export {
     FaInstagramSquare as InstagramIcon,
     FaYoutubeSquare as YoutubeIcon,
     FaVolumeUp as VolumeIcon,
-    FaHamburger as MenuIcon,
+    FaEllipsisV as MenuIcon,
 } from "react-icons/fa";
 export { FiChevronDown as ChevronDownIcon, FiChevronUp as ChevronUpIcon } from "react-icons/fi";
 export { HiArrowSmRight as ArrowRightIcon, HiMail as MailIcon } from "react-icons/hi";

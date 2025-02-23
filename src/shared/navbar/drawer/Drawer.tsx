@@ -47,6 +47,7 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                 fontSize="lg"
                 icon={<MenuIcon />}
                 color={navItemColor}
+                _hover={{ bg: "transparent" }}
                 px="0"
             />
             <Drawer isOpen={isOpen} placement="right" onClose={onClose} autoFocus={false}>

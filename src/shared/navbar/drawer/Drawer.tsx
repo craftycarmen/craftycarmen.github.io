@@ -44,9 +44,8 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                 onClick={onOpen}
                 aria-label="open drawer"
                 fontSize="lg"
-                icon={<MenuIcon />}
+                icon={<MenuIcon color={useColorModeValue(bgDark, bgLight)} />}
                 px="0"
-                color={navItemColor}
             />
             <Drawer isOpen={isOpen} placement="right" onClose={onClose} autoFocus={false}>
                 <DrawerOverlay />

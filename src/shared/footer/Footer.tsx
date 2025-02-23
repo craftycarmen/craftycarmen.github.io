@@ -26,17 +26,17 @@ export const Footer: FC = () => {
                 </Heading>
             </Flex>
             <Text>
-                Want to know more about my experience or simply chat? Let's connect!
+                Let's connect!
             </Text>
             <Box pt="16">
                 <Socials delay={100} exclude={["mail"]} />
             </Box>
             <Flex
-                pt="4"
+                pt="8"
                 pb="2"
                 fontSize="sm"
                 justifyContent="flex-end"
-                direction={{ base: "column", md: "row" }}
+            // direction={{ base: "column", md: "row" }}
             >
                 {/* <Text>This site is hand-crafted, with care by me.</Text> */}
                 <Text>&copy;2024–2025 Carmen Shiu</Text>

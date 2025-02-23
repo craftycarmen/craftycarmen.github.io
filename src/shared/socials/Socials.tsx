@@ -27,7 +27,7 @@ export const Socials: FC<Props> = ({ resume = true, exclude, delay = 800, color 
 
     return (
         <Stack
-            spacing={{ base: 4, md: 0 }}  // Stack on mobile and align horizontally on larger screens
+            spacing={{ base: 4, md: 4 }}  // Stack on mobile and align horizontally on larger screens
             direction={{ base: "column", md: "row" }} // Stack vertically on mobile, horizontally on desktop
             align={{ base: "start", md: "start" }}
         >

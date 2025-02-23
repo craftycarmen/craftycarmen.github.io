@@ -21,18 +21,6 @@
     ],
     "experiences": [
         {
-            "id": "exp-1",
-            "company": "Suasiv",
-            "position": "Frontend Engineer & Technical Advisor",
-            "duration": "December 2024 - Present",
-            "description": [
-                "Building new dashboard components with Next.js, TypeScript, and Tailwind CSS, and refining the homepage",
-                "Partnering with backend developer to ensure seamless integration with frontend",
-                "Advising on technical architecture, stack selection, and best practices for efficient development",
-                "Participating in strategy meetings, providing code reviews, and guiding technical decisions"
-            ]
-        },
-        {
             "id": "exp-2",
             "company": "Angles, Inc.",
             "position": "Production Manager",

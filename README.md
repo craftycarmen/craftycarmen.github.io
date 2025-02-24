@@ -1,2 +1,2 @@
-# Welcome to my portfolio!
-[Check it out live](https://carmenshiu.com/)
+# Welcome to My Portfolio!
+Check it out live: [carmenshiu.com](https://carmenshiu.com/)

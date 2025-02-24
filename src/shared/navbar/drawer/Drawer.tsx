@@ -33,8 +33,9 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef<any>(null);
     const drawerBgColor = useColorModeValue(bgLight, bgDark);
-    const navItemColor = useColorModeValue(bgDark, bgLight);
-    // const menuIconColor = useColorModeValue(primary.400, bgLight);
+    const navItemColor = "secondary.400"
+    // const navItemColor = useColorModeValue(bgDark, bgLight);
+    const menuIconColor = useColorModeValue(bgDark, bgLight);
 
     return (
         <Box {...props}>
@@ -46,7 +47,7 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                 aria-label="open drawer"
                 fontSize="lg"
                 icon={<MenuIcon />}
-                color={navItemColor}
+                color={menuIconColor}
                 _hover={{ bg: "transparent" }}
                 px="0"
             />
@@ -109,6 +110,8 @@ export const MenuDrawer: FC<Props> = ({ onSectionClick, currentPage, ...props })
                                 data-aos-delay="400"
                                 fontWeight="600"
                                 fontSize="2xl"
+                                border="2px solid highlight.300"
+                                boxShadow="2px 2px 0px rgba(251, 170, 41, 1)"
                             >
                                 Resume
                             </Button>

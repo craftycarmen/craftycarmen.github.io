@@ -48,6 +48,8 @@ export const Socials: FC<Props> = ({ resume = true, exclude, delay = 800, color 
                         bg={theme.colors.secondary[400]}
                         color={color || theme.colors.gray[200]}
                         _hover={{ bg: theme.colors.secondary[400] }}
+                        // border={`2px solid ${theme.colors.highlight[300]}`}
+                        boxShadow="2px 2px 0px rgba(251, 170, 41, 1)"
                     >
                         Check Out My Resume
                     </Button>

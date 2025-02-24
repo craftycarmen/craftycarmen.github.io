@@ -60,6 +60,8 @@ export const GitHubButton: FC<GitHubButtonProps> = ({ github, display }) => {
                 bg="secondary.300"
                 color="gray.200"
                 _hover={{ bg: `secondary.300` }}
+                border="2px solid highlight.300"
+                boxShadow="2px 2px 0px rgba(251, 170, 41, 1)"
             >
                 GitHub
             </Button>
@@ -89,6 +91,8 @@ export const LiveDemo: FC<LiveDemoProps> = ({ demo, display }) => {
                 bg="secondary.300"
                 color="gray.200"
                 _hover={{ bg: `secondary.300` }}
+                border="2px solid highlight.300"
+                boxShadow="2px 2px 0px rgba(251, 170, 41, 1)"
             >
                 Live
             </Button>

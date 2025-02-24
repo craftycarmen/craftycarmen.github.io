@@ -69,6 +69,8 @@ export const Navbar: FC = () => {
                                     color="gray.400"
                                     backgroundColor="secondary.400"
                                     _hover={{ bg: `secondary.400` }}
+                                    border="2px solid highlight.300"
+                                    boxShadow="2px 2px 0px rgba(251, 170, 41, 1)"
                                 >
                                     Resume
                                 </Button>

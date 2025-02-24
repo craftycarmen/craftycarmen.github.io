@@ -84,7 +84,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                         {year} • {team}
                     </Text>
 
-                    <Box
+                    {/* <Box
                         py="4"
                         display={{ base: "inherit", lg: "none" }}
                         data-aos="fade-up"
@@ -92,7 +92,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                         data-aos-delay="200"
                     >
                         <Image borderRadius="xl" src={image} />
-                    </Box>
+                    </Box> */}
 
                     <Text
                         fontSize="lg"
@@ -117,27 +117,31 @@ export const FeaturedProjectCard: FC<Props> = ({
 
                 <ProjectCardFooter readMore={readMore} github={github} demo={demo} />
             </Flex>
-
             <Box
                 data-aos="fade-up"
                 data-aos-offset="200"
-                display={{ base: "none", lg: "block" }}
                 flex={{ base: 1, lg: 0.6 }}
                 pl={{ base: "0", lg: ImagePositionPaddingRightMapper[imagePosition] }}
                 pr={{ base: "0", lg: ImagePositionPaddingLeftMapper[imagePosition] }}
+                py="4"
             >
                 <picture>
-                    <source type="image/webp" srcSet={image}></source>
-                    <source type="image/png" srcSet={jpg}></source>
+                    <source type="image/webp" srcSet={image} />
+                    <source type="image/png" srcSet={jpg} />
                     <Image
                         borderRadius="md"
                         src={jpg}
                         alt={`${title}-cover-image`}
-                        transition="all 0.4s ease-in-out"
-                        _hover={{ boxShadow: "0px 20px 60px rgb(77 77 77 / 10%)", transform: "scale(1.01)" }}
+                        outline="2px solid #ff686b"
+                        outlineOffset="4px"
+                        boxShadow="10px 10px 0px rgba(213, 220, 249, 1)"
                     />
                 </picture>
             </Box>
+
+
+
+
         </Flex>
     );
 };

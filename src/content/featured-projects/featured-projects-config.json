@@ -20,8 +20,8 @@
         "image": "/assets/featured-projects/lingoai.webp",
         "jpg": "/assets/featured-projects/lingoai.png",
         "highlights": [
-            "Integrated AI-powered flashcard generation with Gemini AI, enhancing user learning",
-            "Implemented advanced user interface (UI) components with Material UI, delivering a polished user experience (UX)",
+            "Spearheaded frontend development by designing and implementing UI components with Material UI, ensuring a seamless user experience",
+            "Collaborated on AI prompting refinement with Gemini AI, enhancing user learning",
             "Conducted quality assurance (QA) by testing backend routes with Postman and troubleshooting frontend issues",
             "Optimized Firebase Firestore configurations and data handling to improve app performance"
         ]
@@ -51,11 +51,11 @@
         "jpg": "/assets/featured-projects/plantera.png",
         "highlights": [
             "Engineered RESTful API endpoints with Express.js to streamline client-server communication",
-            "Built a shopping cart feature with Redux and Web Storage API for a seamless UX, regardless of authentication status",
+            "Built a persistent shopping cart feature with Redux and Web Storage API, maintaining data across sessions",
             "Designed search and filter functionality to help users easily browse and find plants",
-            "Incorporated Quill, a rich-text editor, to enable users to create and publish plant-related articles",
-            "Configured custom user authentication with bcrypt and React routes, effectively managing user access",
-            "Leveraged Stripe for easy, secure payment processing"
+            "Incorporated Quill rich-text editor to allow users to create and publish plant-related articles",
+            "Established custom user authentication with bcrypt and React routes, effectively managing user access",
+            "Configured Stripe for easy, secure payment processing"
         ]
     },
     {
@@ -81,9 +81,9 @@
         "image": "/assets/featured-projects/thepaw.webp",
         "jpg": "/assets/featured-projects/thepaw.png",
         "highlights": [
-            "Established a Git workflow for a 3-member team, ensuring optimized collaboration and version control",
+            "Led frontend development, setting up an efficient Git workflow for optimized collaboration and version control",
             "Developed the backend with Python and Flask, handling server-side logic and data processing",
-            "Designed a responsive UI with React for viewing business details, adding reviews, and uploading photos",
+            "Designed a mobile-first, responsive UI with React for viewing business details, adding reviews, and uploading photos",
             "Integrated Amazon Web Services (AWS) S3 for efficient photo management and storage"
         ]
     }

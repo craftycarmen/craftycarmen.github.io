@@ -3,7 +3,7 @@
         "id": "featured-project-lingoai",
         "title": "Lingo.ai",
         "year": "July 2024 - August 2024",
-        "team": "Part of a 5-member team",
+        "team": "5-member team project",
         "demo": "https://lingo-ai.carmenshiu.com/",
         "github": "https://github.com/athena-codes/a-A-summer-hackathon",
         "tags": [
@@ -18,7 +18,13 @@
         ],
         "description": "🏆 Second Place - App Academy Summer 2024 Hackathon: AI for Social Good\n An LLM-powered flashcard web application for non-native English speakers to enhance their skills through interactive AI-generated questions.",
         "image": "/assets/featured-projects/lingoai.webp",
-        "jpg": "/assets/featured-projects/lingoai.png"
+        "jpg": "/assets/featured-projects/lingoai.png",
+        "highlights": [
+            "Deployed a flashcard application utilizing Gemini AI on a 5-member hackathon team",
+            "Implemented advanced user interface (UI) components with Material UI, delivering a polished user experience (UX)",
+            "Conducted quality assurance (QA) by testing backend routes with Postman and troubleshooting frontend issues",
+            "Optimized Firebase Firestore configurations and data handling to improve app performance"
+        ]
     },
     {
         "id": "featured-project-plantera",
@@ -42,13 +48,21 @@
         ],
         "description": "A plant marketplace community platform where plant enthusiasts come together to shop and sell plants, and inspire others with plant care guides.",
         "image": "/assets/featured-projects/plantera.webp",
-        "jpg": "/assets/featured-projects/plantera.png"
+        "jpg": "/assets/featured-projects/plantera.png",
+        "highlights": [
+            "Engineered RESTful API endpoints with Express.js to streamline client-server communication",
+            "Built a shopping cart feature with Redux and Web Storage API for a seamless UX, regardless of authentication status",
+            "Designed search and filter functionality to help users easily browse and find plants",
+            "Incorporated Quill, a rich-text editor, to enable users to create and publish plant-related articles",
+            "Configured custom user authentication with bcrypt and React routes, effectively managing user access",
+            "Leveraged Stripe for easy, secure payment processing"
+        ]
     },
     {
         "id": "featured-project-thepaw",
         "title": "The Paw",
         "year": "March 2024 - August 2024",
-        "team": "Part of a 3-member team",
+        "team": "3-member team",
         "tags": [
             "Python",
             "Flask",
@@ -65,6 +79,12 @@
         "github": "https://github.com/ballisticbutterflies/The-Paw",
         "description": "A pet-friendly business review platform for businesses to showcase their services, and pet owners to share their experiences.",
         "image": "/assets/featured-projects/thepaw.webp",
-        "jpg": "/assets/featured-projects/thepaw.png"
+        "jpg": "/assets/featured-projects/thepaw.png",
+        "highlights": [
+            "Established a Git workflow for a 3-member team, ensuring optimized collaboration and version control",
+            "Developed the backend with Python and Flask, handling server-side logic and data processing",
+            "Designed a responsive UI with React for viewing business details, adding reviews, and uploading photos",
+            "Integrated Amazon Web Services (AWS) S3 for efficient photo management and storage"
+        ]
     }
 ]

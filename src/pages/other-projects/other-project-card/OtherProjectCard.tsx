@@ -12,7 +12,7 @@ interface Props {
     github?: string;
     tags: string[];
     description: string;
-    highlights?: string;
+    highlights?: string[];
     image: string;
     jpg: string;
 }

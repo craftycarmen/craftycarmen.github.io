@@ -17,7 +17,7 @@ interface Props {
     github?: string;
     tags: string[];
     description: string;
-    highlights?: string;
+    highlights?: string[];
     image: string;
     imagePosition: ImagePosition;
     jpg: string;
@@ -74,6 +74,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                     </Heading>
                     <Text
                         pt="2"
+                        pb="2"
                         fontSize="sm"
                         fontWeight="600"
                         color="gray"
@@ -102,7 +103,6 @@ export const FeaturedProjectCard: FC<Props> = ({
                         data-aos-offset="200"
                         data-aos-delay="200"
                         borderRadius="xl"
-                        pb="2"
                     >
                         {description.split("\n").map((line, i) => (
                             <span key={i}>
@@ -113,10 +113,12 @@ export const FeaturedProjectCard: FC<Props> = ({
                         ))}
                     </Text>
 
+                    <ProjectCardFooter highlights={highlights} />
+
                     <Tags tags={tags} id={id} />
                 </Box>
 
-                <ProjectCardFooter highlights={highlights} github={github} demo={demo} />
+                <ProjectCardFooter github={github} demo={demo} />
             </Flex>
             <Box
                 data-aos="fade-up"

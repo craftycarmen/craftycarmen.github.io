@@ -1,6 +1,6 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 
-import { Button, Flex, IconButton, useBreakpointValue, Tooltip } from "@chakra-ui/react";
+import { Button, Flex, IconButton, useBreakpointValue, Tooltip, UnorderedList, Text, Box, Accordion, AccordionItem, AccordionButton, AccordionPanel } from "@chakra-ui/react";
 
 import { ArrowRightIcon, GitHubIcon, LinkIcon } from "utils/Icons";
 import { open } from "utils/Functions";
@@ -11,7 +11,7 @@ interface GitHubButtonProps {
 }
 
 interface HighlightsProps {
-    highlights?: string;
+    highlights?: string[];
 }
 
 interface LiveDemoProps {
@@ -22,17 +22,38 @@ interface LiveDemoProps {
 interface Props extends GitHubButtonProps, HighlightsProps, LiveDemoProps { }
 
 export const Highlights: FC<HighlightsProps> = ({ highlights }) => {
+
     return highlights ? (
-        <Button
-            data-aos="fade"
-            data-aos-offset="200"
-            variant="link"
-            colorScheme="black"
-            rightIcon={<ArrowRightIcon fontSize="16pt" />}
-            onClick={() => open(highlights)}
-        >
-            Read More
-        </Button>
+        <Accordion allowToggle>
+            <AccordionItem border="none"
+                pb="4"
+            >
+                {({ isExpanded }) => (
+                    <>
+                        <AccordionButton
+                            as={Button}
+                            variant="link"
+                            color="secondary.400"
+                            _hover={{ bg: "transparent" }}
+                            overflow="hidden"
+                            p="0"
+                            justifyContent="flex-start"
+                            width="fit-content"
+                        >
+                            {isExpanded ? "Hide Highlights" : "See Highlights"}
+                        </AccordionButton>
+
+                        <AccordionPanel>
+                            <UnorderedList listStylePosition="outside" pl="1">
+                                {highlights.map((highlight, idx) => (
+                                    <Text as="li" key={idx}>{highlight}</Text>
+                                ))}
+                            </UnorderedList>
+                        </AccordionPanel>
+                    </>
+                )}
+            </AccordionItem>
+        </Accordion>
     ) : null;
 };
 
@@ -107,7 +128,7 @@ export const ProjectCardFooter: FC<Props> = ({ highlights, github, demo }) => {
             <Flex gap="4" justifyContent="space-between" alignItems="center" display={demo || github ? "flex" : "none"}>
                 <LiveDemo demo={demo} />
                 <GitHubButton github={github} />
-            </Flex>
-        </Flex>
+            </Flex >
+        </Flex >
     );
 };

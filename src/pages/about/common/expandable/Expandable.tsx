@@ -1,6 +1,6 @@
 import { FC, useEffect, useState, useMemo } from "react";
 
-import { Box, Button, AccordionButton, AccordionPanel, Text, Flex, UnorderedList } from "@chakra-ui/react";
+import { Box, Button, AccordionButton, AccordionPanel, Text, Flex, UnorderedList, useColorModeValue } from "@chakra-ui/react";
 import { SectionTitle } from "pages/about/common/title/Title";
 
 interface Props {
@@ -21,6 +21,7 @@ export const Expandable: FC<Props> = ({ expanded, id, idx, title, subTitle, date
         () => (content.length > 1 && !isExpanded) || (!isExpanded && isOverflowing),
         [isOverflowing, isExpanded, content],
     );
+    const dateColor = useColorModeValue("gray", "gray.900");
 
     useEffect(() => {
         const firstPointId = `first-point-${id}`;
@@ -47,8 +48,8 @@ export const Expandable: FC<Props> = ({ expanded, id, idx, title, subTitle, date
                 display="block"
             >
                 <SectionTitle title={title} fontWeight="semibold" />
-                <Text data-aos="fade">{subTitle}</Text>
-                <Text color="gray" data-aos="fade-up" fontSize="sm" fontWeight="semibold">
+                <Text data-aos="fade" fontWeight="600">{subTitle}</Text>
+                <Text color={dateColor} data-aos="fade-up" fontSize="sm">
                     {date}
                 </Text>
                 <Flex pt="2"

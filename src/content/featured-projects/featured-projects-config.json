@@ -20,7 +20,7 @@
         "image": "/assets/featured-projects/lingoai.webp",
         "jpg": "/assets/featured-projects/lingoai.png",
         "highlights": [
-            "Deployed a flashcard application utilizing Gemini AI on a 5-member hackathon team",
+            "Integrated AI-powered flashcard generation with Gemini AI, enhancing user learning",
             "Implemented advanced user interface (UI) components with Material UI, delivering a polished user experience (UX)",
             "Conducted quality assurance (QA) by testing backend routes with Postman and troubleshooting frontend issues",
             "Optimized Firebase Firestore configurations and data handling to improve app performance"
@@ -62,7 +62,7 @@
         "id": "featured-project-thepaw",
         "title": "The Paw",
         "year": "March 2024 - August 2024",
-        "team": "3-member team",
+        "team": "3-member team project",
         "tags": [
             "Python",
             "Flask",

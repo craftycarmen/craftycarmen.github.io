@@ -18,8 +18,8 @@ export const Education: FC = () => {
                 <Box p="0" mb="4" key={`education-${edu.id}`}>
 
                     <SectionTitle title={edu.school} fontWeight="semibold" />
-                    <Text data-aos="fade">{edu.degree}</Text>
-                    <Text color="gray" data-aos="fade-up" fontSize="sm" fontWeight="semibold">
+                    <Text data-aos="fade" fontWeight="600">{edu.degree}</Text>
+                    <Text color="gray" data-aos="fade-up" fontSize="sm">
                         {edu.duration}
                     </Text>
                     <UnorderedList listStylePosition="outside" pl="1">

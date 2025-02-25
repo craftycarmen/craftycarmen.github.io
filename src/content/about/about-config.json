@@ -64,7 +64,8 @@
                 "HTML5",
                 "CSS3",
                 "Performance Optimization",
-                "Responsive Design & Mobile Optimization"
+                "Responsive Design",
+                "Mobile Optimization"
             ]
         },
         {
@@ -74,7 +75,9 @@
                 "Express.js",
                 "Flask",
                 "RESTful APIs",
-                "Third-party API Integrations"
+                "Stripe",
+                "Gemini AI",
+                "Google Maps API"
             ]
         },
         {
@@ -93,6 +96,8 @@
             "tools": [
                 "MacOS",
                 "Git",
+                "Amazon Web Services (AWS)",
+                "AI Prompting",
                 "Quality Assurance",
                 "Pair Programming",
                 "Object-Oriented Programming (OOP)",

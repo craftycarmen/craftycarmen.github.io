@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text, useColorModeValue } from "@chakra-ui/react";
 import { Tags } from "shared/tags/Tags";
 import { ProjectCardFooter } from "shared/project-card-footer/ProjectCardFooter";
 
@@ -52,6 +52,9 @@ export const FeaturedProjectCard: FC<Props> = ({
     year,
     jpg,
 }) => {
+
+    const dateColor = useColorModeValue("gray", "gray.900");
+
     return (
         <Flex
             justifyContent="space-between"
@@ -76,8 +79,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                         pt="2"
                         pb="2"
                         fontSize="sm"
-                        fontWeight="600"
-                        color="gray"
+                        color={dateColor}
                         opacity="0.6"
                         data-aos="fade"
                         data-aos-delay="100"

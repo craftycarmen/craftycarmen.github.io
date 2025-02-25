@@ -17,7 +17,7 @@ export const Tags: FC<Props> = ({ id, tags, size = "sm" }) => {
                     <Badge
                         transition="0.2s ease-in-out"
                         transitionProperty="background, color"
-                        // _hover={{ color: "white", bg: "primary.500" }}
+                        _hover={{ cursor: "default" }}
                         textTransform="none"
                         background="highlight.200"
                         borderRadius="md"

@@ -17,7 +17,7 @@ interface Props {
     github?: string;
     tags: string[];
     description: string;
-    readMore?: string;
+    highlights?: string;
     image: string;
     imagePosition: ImagePosition;
     jpg: string;
@@ -46,7 +46,7 @@ export const FeaturedProjectCard: FC<Props> = ({
     github,
     tags,
     description,
-    readMore,
+    highlights,
     image,
     imagePosition,
     year,
@@ -116,7 +116,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                     <Tags tags={tags} id={id} />
                 </Box>
 
-                <ProjectCardFooter readMore={readMore} github={github} demo={demo} />
+                <ProjectCardFooter highlights={highlights} github={github} demo={demo} />
             </Flex>
             <Box
                 data-aos="fade-up"

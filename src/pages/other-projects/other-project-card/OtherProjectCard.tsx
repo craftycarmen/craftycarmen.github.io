@@ -12,12 +12,12 @@ interface Props {
     github?: string;
     tags: string[];
     description: string;
-    readMore?: string;
+    highlights?: string;
     image: string;
     jpg: string;
 }
 
-export const OtherProjectCard: FC<Props> = ({ id, title, demo, github, tags, description, readMore, image, jpg }) => {
+export const OtherProjectCard: FC<Props> = ({ id, title, demo, github, tags, description, highlights, image, jpg }) => {
     return (
         <Flex
             alignItems={{ base: "flex-start", lg: "center" }}
@@ -42,7 +42,7 @@ export const OtherProjectCard: FC<Props> = ({ id, title, demo, github, tags, des
                     </Text>
                     <Tags tags={tags} id={id} size="xs" />
                 </Box>
-                <ProjectCardFooter readMore={readMore} github={github} demo={demo} />
+                <ProjectCardFooter highlights={highlights} github={github} demo={demo} />
             </Flex>
         </Flex>
     );

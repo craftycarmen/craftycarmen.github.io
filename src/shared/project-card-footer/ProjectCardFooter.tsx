@@ -10,8 +10,8 @@ interface GitHubButtonProps {
     display?: any;
 }
 
-interface ReadMoreProps {
-    readMore?: string;
+interface HighlightsProps {
+    highlights?: string;
 }
 
 interface LiveDemoProps {
@@ -19,17 +19,17 @@ interface LiveDemoProps {
     display?: any;
 }
 
-interface Props extends GitHubButtonProps, ReadMoreProps, LiveDemoProps { }
+interface Props extends GitHubButtonProps, HighlightsProps, LiveDemoProps { }
 
-export const ReadMore: FC<ReadMoreProps> = ({ readMore }) => {
-    return readMore ? (
+export const Highlights: FC<HighlightsProps> = ({ highlights }) => {
+    return highlights ? (
         <Button
             data-aos="fade"
             data-aos-offset="200"
             variant="link"
             colorScheme="black"
             rightIcon={<ArrowRightIcon fontSize="16pt" />}
-            onClick={() => open(readMore)}
+            onClick={() => open(highlights)}
         >
             Read More
         </Button>
@@ -100,10 +100,10 @@ export const LiveDemo: FC<LiveDemoProps> = ({ demo, display }) => {
     ) : null;
 };
 
-export const ProjectCardFooter: FC<Props> = ({ readMore, github, demo }) => {
+export const ProjectCardFooter: FC<Props> = ({ highlights, github, demo }) => {
     return (
-        <Flex justifyContent={readMore ? "space-between" : "flex-end"} alignItems="center" pt="8">
-            <ReadMore readMore={readMore} />
+        <Flex justifyContent={highlights ? "space-between" : "flex-end"} alignItems="center" pt="8">
+            <Highlights highlights={highlights} />
             <Flex gap="4" justifyContent="space-between" alignItems="center" display={demo || github ? "flex" : "none"}>
                 <LiveDemo demo={demo} />
                 <GitHubButton github={github} />

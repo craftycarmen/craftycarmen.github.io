@@ -63,6 +63,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                 h="auto"
                 pr={{ base: "0", lg: ImagePositionPaddingRightMapper[imagePosition] }}
                 pl={{ base: "0", lg: ImagePositionPaddingLeftMapper[imagePosition] }}
+                py={{ base: "6", lg: "0" }}
                 direction="column"
                 justifyContent="space-between"
                 flex={{ base: 1, lg: 0.6 }}

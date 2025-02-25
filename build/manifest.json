@@ -1,11 +1,16 @@
 {
-    "short_name": "HP",
-    "name": "Portfolio • Hrishikesh Paul",
+    "short_name": "CS",
+    "name": "Carmen Shiu • Portfolio",
     "icons": [
         {
             "src": "logo.png",
             "type": "image/png",
             "sizes": "512x512"
+        },
+        {
+            "src": "favicon.png",
+            "type": "image/png",
+            "sizes": "32x32"
         }
     ],
     "start_url": ".",
